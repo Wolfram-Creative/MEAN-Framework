@@ -1,0 +1,26 @@
+<div class="large-12 columns">
+	<h1>Angular Framework</h1>
+</div>
+<div id="home" class="row">
+	<div class="large-6 columns">
+		<canvas id="homePageChart" width="1200" height="1200"></canvas>
+	</div>
+	<div class="large-6 columns">
+		<div class="login">
+
+		</div>
+		<div class="search_events">
+			<h2>Search</h2>
+			<div class="row search_fields">
+				<div class="large-12 columns">
+					<input placeholder="First Name" ng-keyup="search()" ng-model="search_event_name">
+				</div>
+			</div>
+		</div>
+		<div id="search_results_container">
+			<div class="search_result" ng-repeat="search_result in search_results" ng-click="goToEvent($event)" id="{{search_result.name}}">
+				<span>{{search_result.title}}</span>
+			</div>
+		</div>
+	</div>
+</div>

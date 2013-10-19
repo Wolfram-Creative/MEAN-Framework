@@ -1,0 +1,38 @@
+$white: #fff;
+$green: #BCD695;
+$black: #000000;
+$girl: rgb(255, 190, 190);
+$boy: rgb(156, 206, 255);
+
+@import "compass/css3";
+
+h1,h2,h3,h4,h5 {
+  text-align: center;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light;
+  font-weight: normal;
+}
+
+button {
+  margin-bottom: 0px !important;
+  width:100%;
+  height:70px;
+}
+input {
+	width:100%;
+	height:45px;
+	border:0;
+	font-size: 22px;
+}
+
+body {
+	font-size: 16px;
+	background: $black;
+	color: $white
+	font-family: HelveticaNeue-Light, Helvetica Neue Light;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+}
