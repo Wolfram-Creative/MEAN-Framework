@@ -28,6 +28,21 @@ module.exports = function(grunt) {
             }
         }
     },
+     nodemon: {
+            dev: {
+                options: {
+                    file: 'server.js',
+                    watchedExtensions: ['js'],
+
+                    delayTime: 1,
+                    legacyWatch: true,
+                    env: {
+                        PORT: '3000'
+                    },
+                    cwd: __dirname
+                }
+            }
+    },
     watch: {
         scripts: {
             files: ['src/**/*.js', '*.js', 'src/**/*.scss'],
@@ -44,9 +59,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-nodemon');
 
 
   // Default task(s).
   grunt.registerTask('default', ['compass', 'concat', 'uglify']);
+  grunt.registerTask('server', ['nodemon', 'watch']);
 
 };
