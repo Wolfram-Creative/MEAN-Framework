@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") Created with MEAN stack by Wolfram Creative http://woflframcreative.com %> */\n'
       },
       build: {
         src: 'www/js/app.js',
@@ -28,29 +28,38 @@ module.exports = function(grunt) {
             }
         }
     },
-     nodemon: {
-            dev: {
-                options: {
-                    file: 'server.js',
-                    watchedExtensions: ['js'],
-
-                    delayTime: 1,
-                    legacyWatch: true,
-                    env: {
-                        PORT: '3000'
-                    },
-                    cwd: __dirname
-                }
-            }
-    },
     watch: {
         scripts: {
             files: ['src/**/*.js', '*.js', 'src/**/*.scss'],
             tasks: ['concat', 'compass'],
             options: {
                 spawn: false,
+                livereload: true
             },
         },
+    },
+    nodemon: {
+      dev: {
+          options: {
+              file: 'server.js',
+              watchedExtensions: ['js'],
+
+              delayTime: 1,
+              legacyWatch: true,
+              env: {
+                  PORT: '3000'
+              },
+              cwd: __dirname
+          }
+      }
+    },
+    concurrent: {
+      dev: {
+        tasks: ['nodemon', 'watch'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
     }
   });
 
@@ -60,10 +69,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-nodemon');
+  grunt.loadNpmTasks('grunt-concurrent');
 
 
   // Default task(s).
+  grunt.registerTask('server', ['concurrent:dev']);
   grunt.registerTask('default', ['compass', 'concat', 'uglify']);
-  grunt.registerTask('server', ['nodemon', 'watch']);
+
 
 };
