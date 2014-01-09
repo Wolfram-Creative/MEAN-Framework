@@ -5,7 +5,7 @@ var express = require('express'),
 
 var app = express();
 
-var allowCrossDomain = function(req, res, next) {
+var appHeaders = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, api_token, user_token');
@@ -18,7 +18,7 @@ var allowCrossDomain = function(req, res, next) {
 
 app.configure(function(){
     app.set('port', process.env.PORT || 3000);
-    app.use(allowCrossDomain);
+    app.use(appHeaders);
     app.use('/www', express.static(__dirname + '/www'));
     app.use('/src', express.static(__dirname + '/src'));
     app.use('/vendor', express.static(__dirname + '/vendor'));
