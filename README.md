@@ -29,12 +29,9 @@ Directions
 
         npm install -g nodemon
 
-6. Run Grunt and node
+6. Run your server and watch files with concat
 
-        // In one bash window
-        grunt watch
-        // In another bash window
-        nodemon server.js
+        grunt server
 
 You can compile and uglify your app by just running grunt
 
