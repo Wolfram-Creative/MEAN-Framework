@@ -1,6 +1,6 @@
 {
-  "name": "angular-grunt-sass-node-server_framework",
-  "version": "1.0.0",
+  "name": "MEAN-Framework",
+  "version": "1.0.1",
   "repository": {
     "type": "git"
   },
