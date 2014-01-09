@@ -11,7 +11,7 @@ Directions
 
 1. Install nvm and use node 0.10.20
 
-        nvm alias default 0.10.20
+        nvm alias default 0.10.22
 
 2. Install node and grunt dependencies
 
