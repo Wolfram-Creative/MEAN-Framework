@@ -23,7 +23,8 @@ app.configure(function(){
     app.use('/src', express.static(__dirname + '/src'));
     app.use('/vendor', express.static(__dirname + '/vendor'));
     app.use(express.logger('dev'));
-    app.use(express.bodyParser());
+    app.use(express.json());
+    app.use(express.urlencoded());
     app.use(express.cookieParser());
     app.use(express.methodOverride());
     app.set('views', __dirname + '/www');

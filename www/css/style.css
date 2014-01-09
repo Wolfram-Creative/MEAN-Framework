@@ -1,22 +1,20 @@
-/*! Angular-Node-SCSS-Grunt-server_framework - 1.0.0 - 2013-10-18 */
+/*! angular-grunt-sass-node-server_framework - 1.0.0 - 2014-01-09 */
 
-/*! Gender-Reveal - 1.0.0 - 2013-10-18 */
-
-/* line 8, ../../src/sass/style.scss */
+/* line 9, ../../src/sass/style.scss */
 h1, h2, h3, h4, h5 {
   text-align: center;
   font-family: HelveticaNeue-Light, Helvetica Neue Light;
   font-weight: normal;
 }
 
-/* line 14, ../../src/sass/style.scss */
+/* line 15, ../../src/sass/style.scss */
 button {
   margin-bottom: 0px !important;
   width: 100%;
   height: 70px;
 }
 
-/* line 19, ../../src/sass/style.scss */
+/* line 20, ../../src/sass/style.scss */
 input {
   width: 100%;
   height: 45px;
@@ -24,157 +22,17 @@ input {
   font-size: 22px;
 }
 
-/* line 26, ../../src/sass/style.scss */
+/* line 27, ../../src/sass/style.scss */
 body {
   font-size: 16px;
   background: #bcd695;
+  color: white;
   font-family: HelveticaNeue-Light, Helvetica Neue Light;
 }
 
-/* line 32, ../../src/sass/style.scss */
+/* line 34, ../../src/sass/style.scss */
 * {
   box-sizing: border-box;
   position: relative;
   outline: none;
-}
-
-/* line 38, ../../src/sass/style.scss */
-.boy {
-  color: #9cceff;
-}
-
-/* line 41, ../../src/sass/style.scss */
-.girl {
-  color: #ffbebe;
-}
-
-/* line 45, ../../src/sass/style.scss */
-h1 {
-  color: white;
-  font-size: 60px;
-}
-
-/* line 50, ../../src/sass/style.scss */
-#home {
-  max-width: 62.5em !important;
-  margin: 30px auto;
-}
-/* line 53, ../../src/sass/style.scss */
-#home h2 {
-  color: white;
-}
-/* line 57, ../../src/sass/style.scss */
-#home .search_events .search_fields {
-  padding: 0;
-  margin: 0 -2px;
-}
-/* line 60, ../../src/sass/style.scss */
-#home .search_events .search_fields > div {
-  padding: 2px;
-}
-/* line 62, ../../src/sass/style.scss */
-#home .search_events .search_fields > div input {
-  padding: 5px;
-}
-/* line 68, ../../src/sass/style.scss */
-#home #search_results_container {
-  display: block;
-  width: 100%;
-  height: 0;
-  z-index: 5;
-}
-/* line 73, ../../src/sass/style.scss */
-#home #search_results_container .search_result {
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-}
-
-/* line 82, ../../src/sass/style.scss */
-#event_view {
-  padding: 20px;
-  margin: 0;
-  color: white;
-}
-@media (max-width: 767px) {
-  /* line 82, ../../src/sass/style.scss */
-  #event_view {
-    margin-top: 0 !important;
-    top: 0 !important;
-  }
-}
-/* line 90, ../../src/sass/style.scss */
-#event_view h1 {
-  font-size: 53px;
-  line-height: 60px;
-  margin: 0 0 15px;
-  color: white;
-}
-/* line 96, ../../src/sass/style.scss */
-#event_view h2 {
-  color: white;
-  margin: 25px 0 5px;
-}
-/* line 100, ../../src/sass/style.scss */
-#event_view .vote_count {
-  font-size: 25px;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  text-align: center;
-}
-/* line 105, ../../src/sass/style.scss */
-#event_view .vote_count .vote_number {
-  font-size: 100px;
-  text-shadow: 0 0 2px white;
-}
-/* line 110, ../../src/sass/style.scss */
-#event_view #event_info {
-  margin: 0 0 20px;
-}
-/* line 115, ../../src/sass/style.scss */
-#event_view #event_vote div {
-  padding: 0;
-}
-/* line 118, ../../src/sass/style.scss */
-#event_view #event_vote button {
-  width: 100%;
-  height: 80px;
-  border: 0;
-  font-size: 32px;
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  -o-transition: background 0.3s;
-  transition: background 0.3s;
-}
-/* line 124, ../../src/sass/style.scss */
-#event_view #event_vote button.vote_boy {
-  background: #9cceff;
-}
-/* line 126, ../../src/sass/style.scss */
-#event_view #event_vote button.vote_boy:hover {
-  background: #8dc6ff;
-}
-/* line 129, ../../src/sass/style.scss */
-#event_view #event_vote button.vote_boy:active {
-  background: #83c1ff;
-}
-/* line 133, ../../src/sass/style.scss */
-#event_view #event_vote button.vote_girl {
-  background: #ffbebe;
-}
-/* line 135, ../../src/sass/style.scss */
-#event_view #event_vote button.vote_girl:hover {
-  background: #ffafaf;
-}
-/* line 138, ../../src/sass/style.scss */
-#event_view #event_vote button.vote_girl:active {
-  background: #ffa4a4;
-}
-
-/* line 145, ../../src/sass/style.scss */
-#myChart, #homePageChart {
-  width: 100% !important;
-  height: auto !important;
-  display: block;
-  margin: 0 auto;
 }
