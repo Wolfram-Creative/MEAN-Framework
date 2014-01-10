@@ -1,0 +1,32 @@
+Here are a few plans for MEAN-Framework.
+Do not edit this until you have installed PlainTasks for Sublimetext
+
+Templating and Routing:
+  ☐ Dynamically load HTML templates into a Template constructor
+  ☐ Dynamically use templates based on routes 
+        $routeProvider.when('/login', {
+          templateUrl: '/src/app/views/login.ng',
+          controller: 'LoginController'
+        }); 
+  ☐ Compile index.html based on environment
+
+General Improvements:
+    Header:
+  ☐ Create an ng-header directive
+  ☐ Include ng-header in index template
+      <div id="header" ng-header></div>
+      <div id="view" ng-view></div>
+    Footer:
+  ☐ Create an ng-footer directive
+  ☐ Include ng-footer in index template
+      <div id="footer" ng-footer></div>
+      <div id="view" ng-view></div>
+
+Server Rendering:
+  ☐ Include meta redirect for google
+    http://yourwebsite.com/#!/some/page/with/ajax/content
+    to
+    http://yourwebsite.com/?_escaped_fragment_=/some/page/with/ajax/content
+  ☐ Render Angular on Server
+    Create own or use existing renderer.
+    Current ones rely on phantom.js, Let's stay away from this method unless we can use phantom.js directly with node.
