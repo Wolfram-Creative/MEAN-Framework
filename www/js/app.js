@@ -53,7 +53,7 @@ app.controller("EventController", ['$scope', '$location', '$http', 'apiCall', fu
 
 
 	options = {
-		segmentShowStroke : true,
+		segmentShowStroke : true, 
 		segmentStrokeColor : "#fff",
 		segmentStrokeWidth : 5,
 		animation : true,
