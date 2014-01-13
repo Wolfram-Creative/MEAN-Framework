@@ -36,3 +36,12 @@ Directions
 You can compile and uglify your app by just running grunt
 
     grunt
+
+
+
+
+
+
+Run reports:
+
+    plato -d reports -t "MEAN Framework" -x "node_modules|reports|\.json|vendor|www" -r .

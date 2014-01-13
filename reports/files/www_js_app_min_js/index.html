@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="../../assets/css/vendor/morris.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/bootstrap.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/font-awesome.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/font-awesome-ie7.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/codemirror.css" rel="stylesheet">
+  <link href="../../assets/css/plato.css" rel="stylesheet">
+  <link href="../../assets/css/plato-file.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="http://github.com/jsoverson/plato">Plato on Github</a>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="../../index.html">Report Home</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>www/js/app.min.js</h1>
+  </div>
+</div>
+
+<div class="container aggregate-stats">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"></i></a></h2>
+      <p class="stat">75.81</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC"></i></h2>
+      <p class="stat">1</p>
+    </div>
+  </div>
+  <div class="row historical">
+    <div class="col-md-6">
+      <p id="chart_historical_maint" class="chart"></p>
+    </div>
+    <div class="col-md-6">
+      <p id="chart_historical_sloc" class="chart"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty"></i></a></h2>
+      <p class="stat">47.51</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs"></i></a></h2>
+      <p class="stat">3.62</p>
+    </div>
+  </div>
+</div>
+
+<div class="container charts">
+  <div class="row">
+    <h2 class="header">Function weight</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="chart-header">By Complexity <a href="http://en.wikipedia.org/wiki/Cyclomatic_complexity"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="This metric counts the number of distinct paths through a block of code. Lower values are better." data-original-title="Cyclomatic Complexity"></i></a></h3>
+      <div id="fn-by-complexity" class="stat"></div>
+    </div>
+    <div class="col-md-6">
+      <h3 class="chart-header">By SLOC  <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC"></i></h3>
+      <div id="fn-by-sloc" class="stat"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <textarea id="file-source" class="col-md-12">/*! MEAN-Framework 2014-01-09 Created with MEAN stack by Wolfram Creative http://woflframcreative.com */
+function localConstructor(){this.write=function(a,b){return localStorage.setItem(a,JSON.stringify(b)),this},this.get=function(a){var b=JSON.parse(localStorage.getItem(a));return b},this.clear=function(){return localStorage.clear(),this},this.remove=function(a){return localStorage.removeItem(a),this}}var app=angular.module(&quot;app&quot;,[]),local=new localConstructor;app.config([&quot;$routeProvider&quot;,&quot;$locationProvider&quot;,function(a,b){b.html5Mode(!0),a.when(&quot;/&quot;,{templateUrl:&quot;/src/app/views/home.ng&quot;,controller:&quot;HomeController&quot;}),a.when(&quot;/login&quot;,{templateUrl:&quot;/src/app/views/login.ng&quot;,controller:&quot;LoginController&quot;}),a.when(&quot;/:event&quot;,{templateUrl:&quot;/src/app/views/event.ng&quot;,controller:&quot;EventController&quot;}),a.otherwise({redirectTo:&quot;/&quot;})}]),app.controller(&quot;EventController&quot;,[&quot;$scope&quot;,&quot;$location&quot;,&quot;$http&quot;,&quot;apiCall&quot;,function(a,b,c,d){var e=document.getElementById(&quot;myChart&quot;).getContext(&quot;2d&quot;),f=$(&quot;#myChart&quot;),g=$(&quot;#event_info&quot;),h=b.path().replace(&quot;/&quot;,&quot;&quot;);a.event_url=h,scope=a,genderChart=new Chart(e),options={segmentShowStroke:!0,segmentStrokeColor:&quot;#fff&quot;,segmentStrokeWidth:5,animation:!0,animationSteps:100,animateRotate:!0,animateScale:!0,onAnimationComplete:null},a.getEvent=function(){d.getEvent(h).then(function(b){if(angular.extend(a,b.data[0]),local.get(&quot;user&quot;)){var c=local.get(&quot;user&quot;).user_id;a.voted_users.indexOf(c)&gt;-1?a.voted=!0:console.log(!1)}f.css({&quot;max-height&quot;:window.innerHeight-40+&quot;px&quot;,&quot;max-width&quot;:window.innerHeight-40+&quot;px&quot;}),a.chart_data=0===a.boy_votes_length&amp;&amp;0===a.girl_votes_length?[{value:1,color:&quot;rgb(156, 206, 255)&quot;},{value:1,color:&quot;rgb(255, 190, 190)&quot;}]:[{value:a.boy_votes_length,color:&quot;rgb(156, 206, 255)&quot;},{value:a.girl_votes_length,color:&quot;rgb(255, 190, 190)&quot;}],&quot;Doughnut&quot;===a.chart_type?genderChart.Doughnut(a.chart_data,options):&quot;Pie&quot;===a.chart_type&amp;&amp;genderChart.Pie(a.chart_data,options),setTimeout(function(){window.innerWidth&gt;767&amp;&amp;g.animate({top:(window.innerHeight-40-g.outerHeight())/2+&quot;px&quot;})},20)})},a.getEvent(),a.vote=function(b,c){$(b.target);a.voted=!0;var e=FB.getUserID();if(0===e.length)FB.login(function(b){if(&quot;connected&quot;===b.status){var e={};e.access_token=b.authResponse.accessToken,e.user_id=b.authResponse.userID,FB.api(&quot;/me&quot;,function(b){e.first_name=b.first_name,e.last_name=b.last_name,e.user_id=b.id,e.email=b.email,e.gender=b.gender,e.birthday=b.birthday,local.write(&quot;user&quot;,e),a.$apply(function(){d.createUser(e).success(function(){var b={};b.event_id=a._id,b.first_name=local.get(&quot;user&quot;).first_name,b.user_id=local.get(&quot;user&quot;).user_id,d.vote(b,c).then(function(){a.getEvent(),FB.ui({method:&quot;feed&quot;,picture:&quot;http://www.losangelesweddingphotography.org/wp-content/uploads/2013/10/itsa&quot;+c+&quot;.jpg&quot;,link:&quot;http://www.guessthesex.co/&quot;+a.name,title:&quot;Guess the sex of the &quot;+a.mothers_last_name+&quot; baby.&quot;,caption:&quot;I guessed baby &quot;+a.mothers_last_name+&quot; will be a &quot;+c+&quot;! Guess with me, or create your own gender guessing event.&quot;},function(){console.log(&quot;posted link&quot;)})})}).error(function(a){console.log(&quot;error&quot;,a)})})})}else a.voted=!1,a.$apply()},{scope:&quot;email, user_likes, user_checkins, user_birthday&quot;});else{var f={};f.event_id=a._id,local.get(&quot;user&quot;)?(f.first_name=local.get(&quot;user&quot;).first_name,f.user_id=local.get(&quot;user&quot;).user_id,d.vote(f,c).then(function(){a.getEvent(),FB.ui({method:&quot;feed&quot;,picture:&quot;http://www.losangelesweddingphotography.org/wp-content/uploads/2013/10/itsa&quot;+c+&quot;.jpg&quot;,link:&quot;http://www.guessthesex.co/&quot;+a.name,title:&quot;Guess the sex of the &quot;+a.mothers_last_name+&quot; baby.&quot;,caption:&quot;I guessed baby &quot;+a.mothers_last_name+&quot; will be a &quot;+c+&quot;! Guess with me, or create your own gender guessing event.&quot;},function(){console.log(&quot;posted link&quot;)})})):FB.api(&quot;/me&quot;,function(b){var e={};e.first_name=b.first_name,e.last_name=b.last_name,e.user_id=b.id,e.email=b.email,e.gender=b.gender,e.birthday=b.birthday,local.write(&quot;user&quot;,e),f.first_name=local.get(&quot;user&quot;).first_name,f.user_id=local.get(&quot;user&quot;).user_id,d.vote(f,c).then(function(){a.getEvent(),FB.ui({method:&quot;feed&quot;,picture:&quot;http://www.losangelesweddingphotography.org/wp-content/uploads/2013/10/itsa&quot;+c+&quot;.jpg&quot;,link:&quot;http://www.guessthesex.co/&quot;+a.name,title:&quot;Guess the sex of the &quot;+a.mothers_last_name+&quot; baby.&quot;,caption:&quot;I guessed baby &quot;+a.mothers_last_name+&quot; will be a &quot;+c+&quot;! Guess with me, or create your own gender guessing event.&quot;},function(){console.log(&quot;posted link&quot;)})})})}},$(window).resize(function(){window.innerWidth&gt;767?g.css({&quot;margin-top&quot;:(window.innerHeight-40-g.outerHeight())/2+&quot;px&quot;}):g.css({&quot;margin-top&quot;:&quot;0&quot;}),f.css({&quot;max-height&quot;:window.innerHeight-40+&quot;px&quot;,&quot;max-width&quot;:window.innerHeight-40+&quot;px&quot;})})}]),app.controller(&quot;HomeController&quot;,[&quot;$scope&quot;,&quot;$location&quot;,&quot;AuthenticationService&quot;,&quot;apiCall&quot;,function(a,b,c,d){scope=a,a.search_results=[],a.logout=function(){c.logout()},a.goToEvent=function(a){var c=$(a.target).attr(&quot;id&quot;)||$(a.target).closest(&quot;.search_result&quot;).attr(&quot;id&quot;);console.log(c),b.path(&quot;/&quot;+c)},a.search=function(){var b={};b.event_name=a.event_name,d.findEvent(b).success(function(b){console.log(&quot;success&quot;,b),a.search_results=b}).error(function(a){console.log(&quot;error&quot;,a)})}}]),app.controller(&quot;LoginController&quot;,[&quot;$scope&quot;,&quot;$location&quot;,&quot;AuthenticationService&quot;,function(a,b,c){a.credentials={username:&quot;&quot;,password:&quot;&quot;},a.login=function(){c.login(a.credentials)}}]),app.factory(&quot;apiCall&quot;,[&quot;$http&quot;,function(a){return{getEvent:function(b){return a.get(&quot;/api/events/get_event/&quot;+b)},findEvent:function(b){return a.post(&quot;/api/events/find_event/&quot;,b)},vote:function(b,c){return&quot;boy&quot;===c?a.get(&quot;/api/events/vote_no/&quot;+b.event_id+&quot;/&quot;+b.first_name+&quot;/&quot;+b.user_id):&quot;girl&quot;===c?a.get(&quot;/api/events/vote_yes/&quot;+b.event_id+&quot;/&quot;+b.first_name+&quot;/&quot;+b.user_id):void 0},createUser:function(b){return a.post(&quot;/api/users/create/&quot;,b)},getUser:function(b){return a.get(&quot;/api/users/get_user/&quot;+b)}}}]),app.factory(&quot;AuthenticationService&quot;,[&quot;$location&quot;,function(a){return{login:function(b){&quot;ralph&quot;!==b.username||&quot;wiggum&quot;!==b.password?alert(&quot;Username must be &#039;ralph&#039;, password must be &#039;wiggum&#039;&quot;):a.path(&quot;/&quot;)},logout:function(){a.path(&quot;/login&quot;)}}}]);</textarea>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>.</p>
+  </div>
+</footer>
+
+<script type="text/html" id="complexity-popover-template">
+  <div class="complexity-notice">
+    Complexity : {{ complexity.cyclomatic }} <br>
+    Length : {{ complexity.halstead.length }} <br>
+    Difficulty : {{ complexity.halstead.difficulty.toFixed(2) }} <br>
+    Est # bugs : {{ complexity.halstead.bugs.toFixed(2) }}<br>
+  </div>
+</script>
+
+<script type="text/javascript" src="../../assets/scripts/bundles/core-bundle.js"></script>
+<script type="text/javascript" src="../../assets/scripts/bundles/codemirror.js"></script>
+<script type="text/javascript" src="../../assets/scripts/codemirror.markpopovertext.js"></script>
+<script type="text/javascript" src="report.js"></script>
+<script type="text/javascript" src="report.history.js"></script>
+<script type="text/javascript" src="../../assets/scripts/plato-file.js"></script>
+</body>
+</html>
