@@ -1,6 +1,3 @@
-<div class="large-12 columns">
-	<h1>MEAN Framework</h1>
-</div>
 <div id="home" class="row">
 	<div class="large-6 columns">
 		<canvas id="homePageChart" width="1200" height="1200"></canvas>
