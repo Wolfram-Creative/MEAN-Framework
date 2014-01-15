@@ -1,4 +1,11 @@
-var app = angular.module("app", []);
+'use strict';
+
+var app = angular.module("app", ['ngRoute']);
+
+//Set the App title
+app.run(['$rootScope', function ($rootScope) {
+    $rootScope.appTitle = "MEAN";
+}]);
 
 
 function localConstructor() {

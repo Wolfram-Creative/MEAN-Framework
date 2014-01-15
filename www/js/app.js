@@ -1,4 +1,11 @@
-var app = angular.module("app", []);
+'use strict';
+
+var app = angular.module("app", ['ngRoute']);
+
+//Set the App title
+app.run(['$rootScope', function ($rootScope) {
+    $rootScope.appTitle = "MEAN";
+}]);
 
 
 function localConstructor() {
@@ -22,6 +29,7 @@ function localConstructor() {
 
 var local = new localConstructor();
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+
 
   $locationProvider.html5Mode(true);
 
@@ -215,9 +223,12 @@ app.controller("EventController", ['$scope', '$location', '$http', 'apiCall', fu
 		$chart.css({"max-height": (window.innerHeight - 40)+"px", "max-width": (window.innerHeight - 40)+"px"});
 	})
 }]);    
-app.controller("HomeController", ['$scope', '$location', 'AuthenticationService','apiCall',	 function($scope, $location, AuthenticationService, apiCall) {
-	scope = $scope;
+app.controller("HomeController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall',	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
+	var scope = $scope;
+	$rootScope.title = 'Welcome';
+
 	$scope.search_results = [];
+
 	$scope.logout = function() {
 		AuthenticationService.logout();
 	};
@@ -259,6 +270,7 @@ app.controller("LoginController", ['$scope', '$location', 'AuthenticationService
     AuthenticationService.login($scope.credentials);
   }
 }]);
+
 app.factory('apiCall', ['$http', function($http) {
    return {
         getEvent: function (event_name) {

@@ -1,6 +1,9 @@
-app.controller("HomeController", ['$scope', '$location', 'AuthenticationService','apiCall',	 function($scope, $location, AuthenticationService, apiCall) {
-	scope = $scope;
+app.controller("HomeController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall',	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
+	var scope = $scope;
+	$rootScope.title = 'Welcome';
+
 	$scope.search_results = [];
+
 	$scope.logout = function() {
 		AuthenticationService.logout();
 	};
