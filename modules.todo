@@ -1,0 +1,37 @@
+Users: [
+    {
+      _id: '98234kjgf98234kjr',
+      username: "username || email",
+      public: {
+        name: 'Brian Noah',
+        avatar: 'mypic.cdn.amazon.s3.com'
+      },
+      details: {
+        email: "brian@noah.com",
+        phone: "818-439-5727",
+        address: {
+          street_1: '235 Hermes St',
+          street_2: '',
+          city: 'Simi Valley',
+          State: 'CA',
+          Zip: '93065'
+        }
+      },
+      social_auth: {
+        twitter: '03495093',
+        fb: '340590',
+        linkedin: '0934093409'
+      },
+      auth: {
+        auth_token: "09w498wet9u8wer09u8lkdfjga09w8ertojz",
+        auth_secret: "945ijtg934r0ij934u5t8jv",
+        auth_expiration: "6 months from now"
+      },
+      user_level: {
+        level: 5
+      }
+      
+    }
+  ]
+
+  

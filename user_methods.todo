@@ -1,0 +1,20 @@
+User Method Definitions
+
+users : {
+  
+  create : function (obj) { //POST
+    Validate against database (username, unique identifiers)
+    if true insert user into db
+    if !true send reason
+  },
+
+  update : function (obj) { //PUT
+    Find unique_identifier in db
+    Update info
+  },
+
+  get_users : function(limit, skip) { //GET
+    Use query string query?limit=50&skip=20
+
+  }
+}
