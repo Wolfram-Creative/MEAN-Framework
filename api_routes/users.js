@@ -2,39 +2,41 @@
 exports.create = function (req, res) {
 	var user_obj = req.body;
 	model.user(user_obj, function(err, user) {
+console.log(user_obj);
 		if (!err) {
 			username = user.username;
 			db.users.find({username: username}, function (error, response) {
 				if (!error) {
-					if (response.length) {
+					if (!response.length) {
 						db.users.insert(user, function (error, response) {
 							if (error) {
 								res.json({
-									403 : {
-										error: "Could Not Create User" 
-									}
+									error: "Could Not Create User" 
 								})
 							} else {
-								console.log('success')
-								res.send(response);
+								res.json({
+									success: true,
+									body: response
+								});
 							}
 						});
 					} else {
-						res.send(response);
+						res.json({
+							success: false,
+							body: response
+						});
 					}
 				} else {
 					res.json({
-						400 : {
-							error: "Database could not connect." 
-						}
+						success: false,
+						error: "Database could not connect." 
 					})
 				}
 			});
 		} else {
 			res.json({
-				403 : {
-					error: err
-				}
+				success: false,
+				error: err
 			})
 		}
 	});

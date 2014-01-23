@@ -26,12 +26,12 @@ function mergeObjects (to, from) {
 
 exports.user = function (user_obj, callback) {
 	var model = {
-			username: "required",
+			username: 'required',
 			first_name: 'required',
 			last_name: 'required',
 			avatar: '',
-			email: "required",
-			phone: "required",
+			email: 'required',
+			phone: '',
 			address: {
 				street_1: '',
 				street_2: '',
@@ -39,7 +39,7 @@ exports.user = function (user_obj, callback) {
 				State: '',
 				Zip: ''
 			},
-			user_level: 0
+			user_level: 1
 		},
 		err = null,
 		missing_fields = [],
@@ -57,7 +57,7 @@ exports.user = function (user_obj, callback) {
 	if (missing_fields.length) {
 		err = "Could not create user without the following fields: "
 		for (i = 0; i < missing_fields.length; i++) {
-			err += missing_fields[i];
+			err += missing_fields[i] + ' ';
 		}
 		model = null;
 	}

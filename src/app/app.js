@@ -2,14 +2,9 @@
 
 var app = angular.module("app", ['ngRoute']);
 
-//Set the App title
-app.run(['$rootScope', function ($rootScope) {
-    $rootScope.appTitle = "MEAN";
-}]);
-
 
 function localConstructor() {
-    this.write = function (key, obj) {
+    this.set = function (key, obj) {
         localStorage.setItem(key, JSON.stringify(obj));
         return this;
     };
@@ -28,3 +23,12 @@ function localConstructor() {
 };
 
 var local = new localConstructor();
+
+//Set the App title and
+app.run(['$rootScope', function ($rootScope) {
+    $rootScope.appTitle = "MEAN";
+    if (local.get('user') !== null){
+        $rootScope.user = local.get('user');
+        $rootScope.logged_in = true;
+    }
+}]);
