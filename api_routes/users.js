@@ -1,5 +1,4 @@
 
-
 exports.create = function (req, res) {
 	var user_obj = req.body;
 	model.user(user_obj, function(err, user) {
@@ -8,7 +7,7 @@ exports.create = function (req, res) {
 			db.users.find({username: username}, function (error, response) {
 				if (!error) {
 					if (response.length) {
-						db.users.insert(user_obj, function (error, response) {
+						db.users.insert(user, function (error, response) {
 							if (error) {
 								res.json({
 									403 : {

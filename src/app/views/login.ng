@@ -1,22 +1,48 @@
 <div id="login" class="row">
-  <div class="large-6 large-offset-3">
-    <form ng-submit="login()">
-      <fieldset class="radius">
-        <div class="row">
-          <div class="large-6 columns">
-            <input type="text" name="username" placeholder="username" ng-model="credentials.username" required/>
-          </div>
-            <div class="large-6 columns">
-            <input type="password" name="password" placeholder="password" ng-model="credentials.password" required/>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="large-12 columns">
-            <button type="submit" class="button large expand radius">Log In</button>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-  </div>
+    <div class="large-6 large-offset-3">
+        <form ng-submit="login()">
+            <div class="row">
+                <div class="large-6 columns">
+                    <input type="text" name="username" placeholder="username" ng-model="credentials.username" required/>
+                </div>
+                <div class="large-6 columns">
+                    <input type="password" name="password" placeholder="password" ng-model="credentials.password" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <button type="submit" class="button large expand radius">Log In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="large-6 large-offset-3">
+        <form ng-submit="createUser()">
+            <div class="row">
+                <div class="large-6 columns">
+                    <input type="text" name="first_name" placeholder="First Name" ng-model="new_user.first_name" required/>
+                </div>
+                <div class="large-6 columns">
+                    <input type="text" name="last_name" placeholder="Last Name" ng-model="new_user.last_name" required/>
+                </div>
+                 <div class="large-6 columns">
+                    <input type="text" name="email" placeholder="email" ng-model="new_user.email" required/>
+                </div>
+                <div class="large-6 columns">
+                    <input type="text" name="username" placeholder="Username" ng-model="new_user.username" required/>
+                </div>
+                <div class="large-6 columns">
+                    <input type="password" name="password" placeholder="Password" ng-model="new_user.password" required/>
+                </div>
+                <div class="large-6 columns">
+                    <input type="password" name="password" placeholder=" Repeat Password" ng-model="new_password" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <button type="submit" class="button large expand">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
