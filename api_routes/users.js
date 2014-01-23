@@ -56,6 +56,24 @@ exports.getUser = function (req, res) {
 	});
 }
 
+exports.get_users = function (req, res) {
+
+	if(req.user) {
+		db.users.findOne({$or[
+			{'username':req.body.username},
+			{'_id':req.body.user_id}]}, function(err, results){
+				if(!err) {
+					res.send(results.users);
+				} else {
+					res.send(err)
+				}
+			});
+	} else {
+		
+	}
+
+};
+
 exports.login = function (req, res) {
 	console.log('logging in');
 	console.log(req.headers);
