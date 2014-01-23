@@ -1,4 +1,4 @@
-function mergeObjects = function (to, from) {
+function mergeObjects (to, from) {
 	for (key in from) {
 		val = from[key];
 		if (typeof to[key] !== 'undefined') {
@@ -11,12 +11,12 @@ function mergeObjects = function (to, from) {
 				to[key] = val;
 			}
 			if ( (typeof to[key] === 'object' && typeof to[key].length === 'undefined') && 
-				(typeof from[key === 'object'] && typeof from[key].length === 'undefined') {
+				(typeof from[key === 'object'] && typeof from[key].length === 'undefined') ) {
 				// is object
 				mergeObjects(to[key], from[key]);
 			}
 			if ( (typeof to[key] === 'object' && typeof to[key].length !== 'undefined') && 
-				(typeof from[key === 'object'] && typeof from[key].length !== 'undefined') {
+				(typeof from[key === 'object'] && typeof from[key].length !== 'undefined') ) {
 				// is array;
 				to[key] = from[key].slice();
 			}
