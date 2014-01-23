@@ -1,3 +1,29 @@
+function mergeObjects = function (to, from) {
+	for (key in from) {
+		val = from[key];
+		if (typeof to[key] !== 'undefined') {
+			if (typeof to[key] === 'string' && typeof from[key] === 'string') {
+				// is a string
+				to[key] = val;
+			}
+			if (typeof to[key] === 'number' && typeof from[key] === 'number') {
+				// is a number
+				to[key] = val;
+			}
+			if ( (typeof to[key] === 'object' && typeof to[key].length === 'undefined') && 
+				(typeof from[key === 'object'] && typeof from[key].length === 'undefined') {
+				// is object
+				mergeObjects(to[key], from[key]);
+			}
+			if ( (typeof to[key] === 'object' && typeof to[key].length !== 'undefined') && 
+				(typeof from[key === 'object'] && typeof from[key].length !== 'undefined') {
+				// is array;
+				to[key] = from[key].slice();
+			}
+		}
+	}
+}
+
 exports.user = function (user_obj, callback) {
 	var model = {
 			username: "required",
@@ -20,17 +46,7 @@ exports.user = function (user_obj, callback) {
 		val,
 		i;
 
-	for (key in user_obj) {
-		val = user_obj[key];
-		if (typeof model[key] !== 'undefined') {
-			if (typeof model[key] === 'string') {
-				model[key] = val;
-			}
-			if (typeof model[key] === 'obj') {
-				
-			}
-		}
-	}
+	mergeObjects(model, user_obj);
 	for (key in model) {
 		val = model[key];
 		if (val === "required") {
