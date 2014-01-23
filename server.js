@@ -1,7 +1,12 @@
 var express = require('express'),
     http = require('http'),
     users = require('./api_routes/users'),
-    events = require('./api_routes/events');
+    events = require('./api_routes/events'),
+    databaseUrl = "mean:123456@troup.mongohq.com:10087/MEAN_stack",
+    collections = ["users", "events"],
+    db = require("mongojs").connect(databaseUrl, collections),
+    model = require('./models');
+
 
 var app = express();
 

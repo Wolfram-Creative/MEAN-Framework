@@ -1,34 +1,42 @@
-var databaseUrl = "",
-    collections = ["users", "events"],
-    db = require("mongojs").connect(databaseUrl, collections);
+
 
 exports.create = function (req, res) {
 	var user_obj = req.body;
-	var user_id = user_obj.user_id;
-	db.users.find({user_id: user_id}, function (error, response) {
-		if (error) {
-			res.json({
-				400 : {
-					error: "User Not Found" 
-				}
-			})
-		} else {
-			if (response.length) {
-				db.users.insert(user_obj, function (error, response) {
-					if (error) {
-						res.json({
-							400 : {
-								error: "Could Not Create User" 
+	model.user(user_obj, function(err, user) {
+		if (!err) {
+			username = user.username;
+			db.users.find({username: username}, function (error, response) {
+				if (!error) {
+					if (response.length) {
+						db.users.insert(user_obj, function (error, response) {
+							if (error) {
+								res.json({
+									403 : {
+										error: "Could Not Create User" 
+									}
+								})
+							} else {
+								console.log('success')
+								res.send(response);
 							}
-						})
+						});
 					} else {
-						console.log('success')
 						res.send(response);
 					}
-				});
-			} else {
-				res.send(response);
-			}
+				} else {
+					res.json({
+						400 : {
+							error: "Database could not connect." 
+						}
+					})
+				}
+			});
+		} else {
+			res.json({
+				403 : {
+					error: err
+				}
+			})
 		}
 	});
 }
