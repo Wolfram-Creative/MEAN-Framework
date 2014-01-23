@@ -291,11 +291,14 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', 'Authenti
 
 
 
-app.controller("LoginController", ['$scope', '$location', 'AuthenticationService', function($scope, $location, AuthenticationService) {
+app.controller("LoginController", ['$scope', '$location', 'apiCall', function($scope, $location, apiCall) {
   $scope.credentials = { username: "", password: "" };
 
   $scope.login = function() {
-    AuthenticationService.login($scope.credentials);
+    apiCall.login($scope.credentials);
+  }
+  $scope.createUser = function() {
+    apiCall.createUser($scope.credentials);
   }
 }]);
 app.directive('ngHeader', function () {

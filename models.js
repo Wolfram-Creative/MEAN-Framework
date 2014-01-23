@@ -27,7 +27,8 @@ function mergeObjects (to, from) {
 exports.user = function (user_obj, callback) {
 	var model = {
 			username: "required",
-			name: 'required',
+			first_name: 'required',
+			last_name: 'required',
 			avatar: '',
 			email: "required",
 			phone: "required",
