@@ -2,14 +2,9 @@
 
 var app = angular.module("app", ['ngRoute']);
 
-//Set the App title
-app.run(['$rootScope', function ($rootScope) {
-    $rootScope.appTitle = "MEAN";
-}]);
-
 
 function localConstructor() {
-    this.write = function (key, obj) {
+    this.set = function (key, obj) {
         localStorage.setItem(key, JSON.stringify(obj));
         return this;
     };
@@ -28,6 +23,15 @@ function localConstructor() {
 };
 
 var local = new localConstructor();
+
+//Set the App title and
+app.run(['$rootScope', function ($rootScope) {
+    $rootScope.appTitle = "MEAN";
+    if (local.get('user') !== null){
+        $rootScope.user = local.get('user');
+        $rootScope.logged_in = true;
+    }
+}]);
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 
@@ -225,7 +229,7 @@ app.controller("EventController", ['$scope', '$location', '$http', 'apiCall', fu
 }]);    
 app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall',	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
 	$scope.search_results = [];
-
+	$scope.root = $rootScope;
 	$scope.logout = function() {
 		AuthenticationService.logout();
 	};
@@ -291,12 +295,32 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', 'Authenti
 
 
 
-app.controller("LoginController", ['$scope', '$location', 'AuthenticationService', function($scope, $location, AuthenticationService) {
-  $scope.credentials = { username: "", password: "" };
-
-  $scope.login = function() {
-    AuthenticationService.login($scope.credentials);
-  }
+app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', function($rootScope, $scope, $location, apiCall) {
+	$rootScope.title = 'Log In';
+	$scope.root = $rootScope;
+	$scope.credentials = { username: "", password: "" };
+	$scope.login = function() {
+		apiCall.login($scope.credentials).then(function (response) {
+			console.log(response);
+			if (response.success) {
+				console.log('success');
+				$rootScope.user = response.body;
+				$rootScope.logged_in = true;
+			}
+		});
+	}
+	$scope.createUser = function() {
+		apiCall.createUser($scope.new_user).then(function (response) {
+			var data = response.data;
+			if (data.success) {
+				var user = data.body[0];
+				$rootScope.user = user;
+				$rootScope.logged_in = true;
+				local.set('user', user);
+				history.back();
+			}
+		});
+	}
 }]);
 app.directive('ngHeader', function () {
 	return {

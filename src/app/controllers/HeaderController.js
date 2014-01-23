@@ -1,6 +1,6 @@
 app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall',	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
 	$scope.search_results = [];
-
+	$scope.root = $rootScope;
 	$scope.logout = function() {
 		AuthenticationService.logout();
 	};
