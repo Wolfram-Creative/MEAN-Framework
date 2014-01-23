@@ -4,9 +4,11 @@ var app = angular.module("app", ['ngRoute']);
 
 //Set the App title and User
 app.run(['$rootScope', '_$local', function ($rootScope, _$local) {
+    var user = _$local.get('user');
     $rootScope.appTitle = "MEAN";
-    if (_$local.get('user') !== null){
-        $rootScope.user = _$local.get('user');
+    console.log(typeof user, user);
+    if (typeof user === 'object' && Object.keys(user).length) {
+        $rootScope.user = user;
         $rootScope.logged_in = true;
     }
 }]);
@@ -205,11 +207,13 @@ app.controller("EventController", ['$scope', '$location', '$http', 'apiCall', fu
 		$chart.css({"max-height": (window.innerHeight - 40)+"px", "max-width": (window.innerHeight - 40)+"px"});
 	})
 }]);    
-app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall',	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
+app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall', '_$local',	 function($scope, $rootScope, $location, AuthenticationService, apiCall, _$local) {
 	$scope.search_results = [];
 	$scope.root = $rootScope;
-	$scope.logout = function() {
-		AuthenticationService.logout();
+	$scope.logOut = function() {
+		_$local.remove('user');
+		$rootScope.user = {};
+		$rootScope.logged_in = false;
 	};
 
 	$scope.goToEvent = function (e) {
@@ -276,7 +280,6 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', 'Authenti
 app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', '_$local', function($rootScope, $scope, $location, apiCall, _$local) {
 	$rootScope.title = 'Log In';
 	$scope.root = $rootScope;
-	$scope.credentials = { username: "", password: "" };
 	$scope.login = function() {
 		apiCall.login($scope.credentials).then(function (response) {
 			console.log(response);
@@ -291,10 +294,10 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 		apiCall.createUser($scope.new_user).then(function (response) {
 			var data = response.data;
 			if (data.success) {
+				_$local.set('user', user);
 				var user = data.body[0];
 				$rootScope.user = user;
 				$rootScope.logged_in = true;
-				_$local.set('user', user);
 				history.back();
 			}
 		});
@@ -346,14 +349,18 @@ app.factory("AuthenticationService", ['$location', function($location) {
   };
 }]);
 
-app.factory('_$local', ['$http', function($http) {
+app.factory('_$local', [function() {
     //Handles Local Storage
    return {
         set : function (key, obj) {
             localStorage.setItem(key, JSON.stringify(obj));
+            return obj;
         },
         get : function (key) {
-            var obj = JSON.parse(localStorage.getItem(key));
+            var obj = {}
+            if (localStorage.getItem(key) !== 'undefined') {
+                obj = JSON.parse(localStorage.getItem(key));
+            }
             return obj;
         },
         clear : function () {

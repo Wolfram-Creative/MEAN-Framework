@@ -1,6 +1,7 @@
 <div class="large-12 columns">
 	<h1>MEAN Framework</h1>
 	<h2 ng-if="root.logged_in">{{root.user.first_name}} {{root.user.last_name}}</h2>
-	<a ng-if="!root.logged_in" href="/login">Log In</a>
 	<h2>{{root.title}}</h2>
+	<a ng-if="!root.logged_in" href="/login">Log In</a>
+	<a ng-if="root.logged_in" ng-click="logOut()">Log Out</a>
 </div>

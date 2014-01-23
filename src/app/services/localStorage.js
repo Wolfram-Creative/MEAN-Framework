@@ -1,11 +1,15 @@
-app.factory('_$local', ['$http', function($http) {
+app.factory('_$local', [function() {
     //Handles Local Storage
    return {
         set : function (key, obj) {
             localStorage.setItem(key, JSON.stringify(obj));
+            return obj;
         },
         get : function (key) {
-            var obj = JSON.parse(localStorage.getItem(key));
+            var obj = {}
+            if (localStorage.getItem(key) !== 'undefined') {
+                obj = JSON.parse(localStorage.getItem(key));
+            }
             return obj;
         },
         clear : function () {

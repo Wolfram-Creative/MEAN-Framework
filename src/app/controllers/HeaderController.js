@@ -1,8 +1,10 @@
-app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall',	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
+app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall', '_$local',	 function($scope, $rootScope, $location, AuthenticationService, apiCall, _$local) {
 	$scope.search_results = [];
 	$scope.root = $rootScope;
-	$scope.logout = function() {
-		AuthenticationService.logout();
+	$scope.logOut = function() {
+		_$local.remove('user');
+		$rootScope.user = {};
+		$rootScope.logged_in = false;
 	};
 
 	$scope.goToEvent = function (e) {
