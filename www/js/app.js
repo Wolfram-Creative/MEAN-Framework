@@ -2,33 +2,11 @@
 
 var app = angular.module("app", ['ngRoute']);
 
-
-function localConstructor() {
-    this.set = function (key, obj) {
-        localStorage.setItem(key, JSON.stringify(obj));
-        return this;
-    };
-    this.get = function (key) {
-        var obj = JSON.parse(localStorage.getItem(key));
-        return obj;
-    };
-    this.clear = function () {
-        localStorage.clear();
-        return this;
-    };
-    this.remove = function (key) {
-        localStorage.removeItem(key);
-        return this;
-    };
-};
-
-var local = new localConstructor();
-
-//Set the App title and
-app.run(['$rootScope', function ($rootScope) {
+//Set the App title and User
+app.run(['$rootScope', '_$local', function ($rootScope, _$local) {
     $rootScope.appTitle = "MEAN";
-    if (local.get('user') !== null){
-        $rootScope.user = local.get('user');
+    if (_$local.get('user') !== null){
+        $rootScope.user = _$local.get('user');
         $rootScope.logged_in = true;
     }
 }]);
@@ -295,7 +273,7 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', 'Authenti
 
 
 
-app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', function($rootScope, $scope, $location, apiCall) {
+app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', '_$local', function($rootScope, $scope, $location, apiCall, _$local) {
 	$rootScope.title = 'Log In';
 	$scope.root = $rootScope;
 	$scope.credentials = { username: "", password: "" };
@@ -316,7 +294,7 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 				var user = data.body[0];
 				$rootScope.user = user;
 				$rootScope.logged_in = true;
-				local.set('user', user);
+				_$local.set('user', user);
 				history.back();
 			}
 		});
@@ -366,4 +344,25 @@ app.factory("AuthenticationService", ['$location', function($location) {
       $location.path('/login');
     }
   };
+}]);
+
+app.factory('_$local', ['$http', function($http) {
+    //Handles Local Storage
+   return {
+        set : function (key, obj) {
+            localStorage.setItem(key, JSON.stringify(obj));
+        },
+        get : function (key) {
+            var obj = JSON.parse(localStorage.getItem(key));
+            return obj;
+        },
+        clear : function () {
+            localStorage.clear();
+            return this;
+        },
+        remove : function (key) {
+            localStorage.removeItem(key);
+            return this;
+        }
+   }
 }]);

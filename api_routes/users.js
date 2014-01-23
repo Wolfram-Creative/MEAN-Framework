@@ -2,7 +2,6 @@
 exports.create = function (req, res) {
 	var user_obj = req.body;
 	model.user(user_obj, function(err, user) {
-console.log(user_obj);
 		if (!err) {
 			username = user.username;
 			db.users.find({username: username}, function (error, response) {

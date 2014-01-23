@@ -1,4 +1,4 @@
-app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', function($rootScope, $scope, $location, apiCall) {
+app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', '_$local', function($rootScope, $scope, $location, apiCall, _$local) {
 	$rootScope.title = 'Log In';
 	$scope.root = $rootScope;
 	$scope.credentials = { username: "", password: "" };
@@ -19,7 +19,7 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 				var user = data.body[0];
 				$rootScope.user = user;
 				$rootScope.logged_in = true;
-				local.set('user', user);
+				_$local.set('user', user);
 				history.back();
 			}
 		});
