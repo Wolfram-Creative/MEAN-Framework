@@ -45,11 +45,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"></i></a></h2>
-      <p class="stat">79.29</p>
+      <p class="stat">85.04</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC"></i></h2>
-      <p class="stat">23</p>
+      <p class="stat">11</p>
     </div>
   </div>
   <div class="row historical">
@@ -63,11 +63,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty"></i></a></h2>
-      <p class="stat">12.10</p>
+      <p class="stat">6.19</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs"></i></a></h2>
-      <p class="stat">0.22</p>
+      <p class="stat">0.06</p>
     </div>
   </div>
 </div>
@@ -91,27 +91,15 @@
 <div class="container">
   <div class="row">
     <textarea id="file-source" class="col-md-12">app.factory(&#039;apiCall&#039;, [&#039;$http&#039;, function($http) {
-   return {
-        getEvent: function (event_name) {
-            return $http.get(&#039;/api/events/get_event/&#039; + event_name)
-        },
-        findEvent: function (search_params) {
-        	return $http.post(&#039;/api/events/find_event/&#039;, search_params);
-        },
-        vote: function (event_info, gender) {
-        	if (gender === &#039;boy&#039;) {
-        		return $http.get(&#039;/api/events/vote_no/&#039; + event_info.event_id + &#039;/&#039; + event_info.first_name +&#039;/&#039; + event_info.user_id);
-        	} else if (gender ===  &#039;girl&#039;) {
-        		return $http.get(&#039;/api/events/vote_yes/&#039; + event_info.event_id + &#039;/&#039; + event_info.first_name +&#039;/&#039; + event_info.user_id);
-        	}
-        },
+	&#039;use strict&#039;;
+    return {
         createUser: function(obj) {
-        	return $http.post(&#039;/api/users/create/&#039;, obj);
+            return $http.post(&#039;/api/users/create/&#039;, obj);
         },
-        getUser : function (user_id) {
-        	return $http.get(&#039;/api/users/get_user/&#039; + user_id)
+        logIn: function(obj) {
+            return $http.post(&#039;/api/users/log_in/&#039;, obj);
         }
-   }
+    };
 }]);</textarea>
   </div>
 </div>

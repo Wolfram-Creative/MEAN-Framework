@@ -11,7 +11,7 @@ exports.create = function (req, res) {
 							if (error) {
 								res.json({
 									error: "Could Not Create User" 
-								})
+								});
 							} else {
 								res.json({
 									success: true,
@@ -29,17 +29,17 @@ exports.create = function (req, res) {
 					res.json({
 						success: false,
 						error: "Database could not connect." 
-					})
+					});
 				}
 			});
 		} else {
 			res.json({
 				success: false,
 				error: err
-			})
+			});
 		}
 	});
-}
+};
 
 exports.getUser = function (req, res) {
 	var user_id = req.params.user_id;
@@ -49,12 +49,12 @@ exports.getUser = function (req, res) {
 				400 : {
 					error: "User Not Found" 
 				}
-			})
+			});
 		} else {
 			res.send(response);
 		}
 	});
-}
+};
 
 exports.get_users = function (req, res) {
 
@@ -77,5 +77,5 @@ exports.get_users = function (req, res) {
 exports.login = function (req, res) {
 	console.log('logging in');
 	console.log(req.headers);
-	res.json({'user': 'Brian Noah'})
-}
+	res.json({'user': 'Brian Noah'});
+};

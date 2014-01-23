@@ -106,13 +106,13 @@ exports.createEvent = function (req, res) {
 				400 : {
 					error: &quot;Could Not Create Event&quot; 
 				}
-			})
+			});
 		} else {
-			console.log(&#039;success&#039;)
+			console.log(&#039;success&#039;);
 			res.send(response);
 		}
 	});
-}
+};
 
 // Search by parents names
 exports.findEvent = function (req, res) {
@@ -124,12 +124,12 @@ exports.findEvent = function (req, res) {
 				400 : {
 					error: &quot;Search Not Found&quot; 
 				}
-			})
+			});
 		} else {
 			res.send(response);
 		}
 	});
-}
+};
 
 // Have event_url_name
 exports.getEvent = function (req, res) {
@@ -141,14 +141,14 @@ exports.getEvent = function (req, res) {
 				400 : {
 					error: &quot;Search Not Found&quot; 
 				}
-			})
+			});
 		} else {
-			response[0].no_votes_length = response[0].no_votes.length
-			response[0].yes_votes_length = response[0].yes_votes.length
+			response[0].no_votes_length = response[0].no_votes.length;
+			response[0].yes_votes_length = response[0].yes_votes.length;
 			res.send(response);
 		}
 	});
-}</textarea>
+};</textarea>
   </div>
 </div>
 

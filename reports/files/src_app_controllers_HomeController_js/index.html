@@ -45,11 +45,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"></i></a></h2>
-      <p class="stat">78.99</p>
+      <p class="stat">80.99</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC"></i></h2>
-      <p class="stat">28</p>
+      <p class="stat">5</p>
     </div>
   </div>
   <div class="row historical">
@@ -63,11 +63,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty"></i></a></h2>
-      <p class="stat">8.89</p>
+      <p class="stat">3.06</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs"></i></a></h2>
-      <p class="stat">0.27</p>
+      <p class="stat">0.05</p>
     </div>
   </div>
 </div>
@@ -90,33 +90,10 @@
 
 <div class="container">
   <div class="row">
-    <textarea id="file-source" class="col-md-12">app.controller(&quot;HomeController&quot;, [&#039;$scope&#039;, &#039;$rootScope&#039;, &#039;$location&#039;, &#039;AuthenticationService&#039;,&#039;apiCall&#039;,	 function($scope, $rootScope, $location, AuthenticationService, apiCall) {
-	var scope = $scope;
+    <textarea id="file-source" class="col-md-12">app.controller(&quot;HomeController&quot;, [&#039;$scope&#039;, &#039;$rootScope&#039;, &#039;$location&#039;, &#039;AuthenticationService&#039;,&#039;apiCall&#039;, function($scope, $rootScope, $location, AuthenticationService, apiCall) {
+	&#039;use strict&#039;;
+	$scope.root = $rootScope;
 	$rootScope.title = &#039;Welcome&#039;;
-
-	$scope.search_results = [];
-
-	$scope.logout = function() {
-		AuthenticationService.logout();
-	};
-
-	$scope.goToEvent = function (e) {
-		var event_url = $(e.target).attr(&#039;id&#039;) || $(e.target).closest(&#039;.search_result&#039;).attr(&#039;id&#039;)
-		console.log(event_url);
-		$location.path(&#039;/&#039; + event_url);
-	}
-
-	$scope.search = function () {
-		var search_obj = {}
-		search_obj.event_name = $scope.event_name;
-		apiCall.findEvent(search_obj).success(function (s) {
-			console.log(&#039;success&#039;, s);
-			$scope.search_results = s;
-		}).error(function (e) {
-			console.log(&#039;error&#039;, e)
-		})
-	}
-	
 }]);</textarea>
   </div>
 </div>

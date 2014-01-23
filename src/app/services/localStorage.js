@@ -1,12 +1,13 @@
 app.factory('_$local', [function() {
+    'use strict';
     //Handles Local Storage
-   return {
+    return {
         set : function (key, obj) {
             localStorage.setItem(key, JSON.stringify(obj));
             return obj;
         },
         get : function (key) {
-            var obj = {}
+            var obj = {};
             if (localStorage.getItem(key) !== 'undefined') {
                 obj = JSON.parse(localStorage.getItem(key));
             }
@@ -20,5 +21,5 @@ app.factory('_$local', [function() {
             localStorage.removeItem(key);
             return this;
         }
-   }
+    };
 }]);

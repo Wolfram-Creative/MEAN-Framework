@@ -1,7 +1,8 @@
 app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', '_$local', function($rootScope, $scope, $location, apiCall, _$local) {
+	'use strict';
 	$rootScope.title = 'Log In';
 	$scope.root = $rootScope;
-	$scope.login = function() {
+	$scope.logIn = function() {
 		apiCall.login($scope.credentials).then(function (response) {
 			console.log(response);
 			if (response.success) {
@@ -10,7 +11,7 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 				$rootScope.logged_in = true;
 			}
 		});
-	}
+	};
 	$scope.createUser = function() {
 		apiCall.createUser($scope.new_user).then(function (response) {
 			var data = response.data;
@@ -22,5 +23,5 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 				history.back();
 			}
 		});
-	}
+	};
 }]);

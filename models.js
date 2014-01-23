@@ -1,5 +1,5 @@
 function mergeObjects (to, from) {
-	for (key in from) {
+	for (var key in from) {
 		val = from[key];
 		if (typeof to[key] !== 'undefined') {
 			if (typeof to[key] === 'string' && typeof from[key] === 'string') {
@@ -55,11 +55,11 @@ exports.user = function (user_obj, callback) {
 		}
 	}
 	if (missing_fields.length) {
-		err = "Could not create user without the following fields: "
+		err = "Could not create user without the following fields: ";
 		for (i = 0; i < missing_fields.length; i++) {
 			err += missing_fields[i] + ' ';
 		}
 		model = null;
 	}
 	callback(err, model);
-}
+};

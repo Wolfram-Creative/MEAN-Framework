@@ -45,11 +45,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"></i></a></h2>
-      <p class="stat">71.24</p>
+      <p class="stat">71.34</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC"></i></h2>
-      <p class="stat">55</p>
+      <p class="stat">80</p>
     </div>
   </div>
   <div class="row historical">
@@ -63,11 +63,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty"></i></a></h2>
-      <p class="stat">14.74</p>
+      <p class="stat">16.32</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs"></i></a></h2>
-      <p class="stat">0.37</p>
+      <p class="stat">0.41</p>
     </div>
   </div>
 </div>
@@ -90,40 +90,47 @@
 
 <div class="container">
   <div class="row">
-    <textarea id="file-source" class="col-md-12">var databaseUrl = &quot;&quot;,
-    collections = [&quot;users&quot;, &quot;events&quot;],
-    db = require(&quot;mongojs&quot;).connect(databaseUrl, collections);
-
-exports.create = function (req, res) {
+    <textarea id="file-source" class="col-md-12">exports.create = function (req, res) {
 	var user_obj = req.body;
-	var user_id = user_obj.user_id;
-	db.users.find({user_id: user_id}, function (error, response) {
-		if (error) {
-			res.json({
-				400 : {
-					error: &quot;User Not Found&quot; 
-				}
-			})
-		} else {
-			if (response.length) {
-				db.users.insert(user_obj, function (error, response) {
-					if (error) {
-						res.json({
-							400 : {
-								error: &quot;Could Not Create User&quot; 
+	model.user(user_obj, function(err, user) {
+		if (!err) {
+			username = user.username;
+			db.users.find({username: username}, function (error, response) {
+				if (!error) {
+					if (!response.length) {
+						db.users.insert(user, function (error, response) {
+							if (error) {
+								res.json({
+									error: &quot;Could Not Create User&quot; 
+								});
+							} else {
+								res.json({
+									success: true,
+									body: response
+								});
 							}
-						})
+						});
 					} else {
-						console.log(&#039;success&#039;)
-						res.send(response);
+						res.json({
+							success: false,
+							body: response
+						});
 					}
-				});
-			} else {
-				res.send(response);
-			}
+				} else {
+					res.json({
+						success: false,
+						error: &quot;Database could not connect.&quot; 
+					});
+				}
+			});
+		} else {
+			res.json({
+				success: false,
+				error: err
+			});
 		}
 	});
-}
+};
 
 exports.getUser = function (req, res) {
 	var user_id = req.params.user_id;
@@ -133,18 +140,36 @@ exports.getUser = function (req, res) {
 				400 : {
 					error: &quot;User Not Found&quot; 
 				}
-			})
+			});
 		} else {
 			res.send(response);
 		}
 	});
-}
+};
+
+exports.get_users = function (req, res) {
+
+	if(req.user) {
+		// db.users.findOne({$or[
+		// 	{&#039;username&#039;:req.body.username},
+		// 	{&#039;_id&#039;:req.body.user_id}]}, function(err, results){
+		// 		if(!err) {
+		// 			res.send(results.users);
+		// 		} else {
+		// 			res.send(err)
+		// 		}
+		// 	});
+	} else {
+		
+	}
+
+};
 
 exports.login = function (req, res) {
 	console.log(&#039;logging in&#039;);
 	console.log(req.headers);
-	res.json({&#039;user&#039;: &#039;Brian Noah&#039;})
-}</textarea>
+	res.json({&#039;user&#039;: &#039;Brian Noah&#039;});
+};</textarea>
   </div>
 </div>
 

@@ -1,22 +1,22 @@
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+    'use strict';
 
+    $locationProvider.html5Mode(true);
 
-  $locationProvider.html5Mode(true);
-
-  $routeProvider.when('/', {
+    $routeProvider.when('/', {
     templateUrl: '/src/app/views/home.ng',
     controller: 'HomeController'
-  });
- 
-  $routeProvider.when('/login', {
+    });
+
+    $routeProvider.when('/login', {
     templateUrl: '/src/app/views/login.ng',
     controller: 'LoginController'
-  }); 
+    }); 
 
-  $routeProvider.when('/:event', {
+    $routeProvider.when('/:event', {
     templateUrl: '/src/app/views/event.ng',
     controller: 'EventController'
-  });  
- 
-  $routeProvider.otherwise({ redirectTo: '/' });
+    });  
+
+    $routeProvider.otherwise({ redirectTo: '/' });
 }]);

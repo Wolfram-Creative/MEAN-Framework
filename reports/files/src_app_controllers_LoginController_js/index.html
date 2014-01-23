@@ -45,11 +45,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"></i></a></h2>
-      <p class="stat">81.25</p>
+      <p class="stat">76.17</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC"></i></h2>
-      <p class="stat">7</p>
+      <p class="stat">27</p>
     </div>
   </div>
   <div class="row historical">
@@ -63,11 +63,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty"></i></a></h2>
-      <p class="stat">5.83</p>
+      <p class="stat">7.09</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs"></i></a></h2>
-      <p class="stat">0.06</p>
+      <p class="stat">0.24</p>
     </div>
   </div>
 </div>
@@ -90,12 +90,32 @@
 
 <div class="container">
   <div class="row">
-    <textarea id="file-source" class="col-md-12">app.controller(&quot;LoginController&quot;, [&#039;$scope&#039;, &#039;$location&#039;, &#039;AuthenticationService&#039;, function($scope, $location, AuthenticationService) {
-  $scope.credentials = { username: &quot;&quot;, password: &quot;&quot; };
-
-  $scope.login = function() {
-    AuthenticationService.login($scope.credentials);
-  }
+    <textarea id="file-source" class="col-md-12">app.controller(&quot;LoginController&quot;, [&#039;$rootScope&#039;, &#039;$scope&#039;, &#039;$location&#039;, &#039;apiCall&#039;, &#039;_$local&#039;, function($rootScope, $scope, $location, apiCall, _$local) {
+	&#039;use strict&#039;;
+	$rootScope.title = &#039;Log In&#039;;
+	$scope.root = $rootScope;
+	$scope.logIn = function() {
+		apiCall.login($scope.credentials).then(function (response) {
+			console.log(response);
+			if (response.success) {
+				console.log(&#039;success&#039;);
+				$rootScope.user = response.body;
+				$rootScope.logged_in = true;
+			}
+		});
+	};
+	$scope.createUser = function() {
+		apiCall.createUser($scope.new_user).then(function (response) {
+			var data = response.data;
+			if (data.success) {
+				var user = data.body;
+				_$local.set(&#039;user&#039;, user);
+				$rootScope.user = user;
+				$rootScope.logged_in = true;
+				history.back();
+			}
+		});
+	};
 }]);</textarea>
   </div>
 </div>

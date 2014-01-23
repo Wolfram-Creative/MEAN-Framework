@@ -1,4 +1,5 @@
 app.factory("AuthenticationService", ['$location', function($location) {
+  'use strict';
   return {
     login: function(credentials) {
       if (credentials.username !== "ralph" || credentials.password !== "wiggum") {
