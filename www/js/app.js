@@ -303,8 +303,8 @@ app.directive('ngHeader', function () {
 		restrict: 'A',
 		templateUrl: '/src/app/views/header.ng',
 		controller: 'HeaderController'
-	}
-})
+	};
+});
 
 app.factory('apiCall', ['$http', function($http) {
    return {

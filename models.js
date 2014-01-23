@@ -2,7 +2,7 @@ exports.user = function (user_obj, callback) {
 	var model = {
 			username: "required",
 			name: 'required',
-			avatar: ''
+			avatar: '',
 			email: "required",
 			phone: "required",
 			address: {
@@ -26,7 +26,9 @@ exports.user = function (user_obj, callback) {
 			if (typeof model[key] === 'string') {
 				model[key] = val;
 			}
-			if (typeof model[key] === 'obj')
+			if (typeof model[key] === 'obj') {
+				
+			}
 		}
 	}
 	for (key in model) {
