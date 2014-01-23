@@ -2,8 +2,8 @@
 
 var app = angular.module("app", ['ngRoute']);
 
-//Set the App title and User
 app.run(['$rootScope', '_$local', function ($rootScope, _$local) {
+    //Set the App title and User
     var user = _$local.get('user');
     $rootScope.appTitle = "MEAN";
     console.log(typeof user, user);
