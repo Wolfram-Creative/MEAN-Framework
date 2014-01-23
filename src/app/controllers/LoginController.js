@@ -15,8 +15,8 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 		apiCall.createUser($scope.new_user).then(function (response) {
 			var data = response.data;
 			if (data.success) {
+				var user = data.body;
 				_$local.set('user', user);
-				var user = data.body[0];
 				$rootScope.user = user;
 				$rootScope.logged_in = true;
 				history.back();

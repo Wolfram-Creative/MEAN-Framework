@@ -7,7 +7,7 @@ app.run(['$rootScope', '_$local', function ($rootScope, _$local) {
     var user = _$local.get('user');
     $rootScope.appTitle = "MEAN";
 
-    if (typeof user === 'object' && Object.keys(user).length) {
+    if (angular.isObject(user) && Object.keys(user).length) {
         $rootScope.user = user;
         $rootScope.logged_in = true;
     }
@@ -294,8 +294,8 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 		apiCall.createUser($scope.new_user).then(function (response) {
 			var data = response.data;
 			if (data.success) {
+				var user = data.body;
 				_$local.set('user', user);
-				var user = data.body[0];
 				$rootScope.user = user;
 				$rootScope.logged_in = true;
 				history.back();
