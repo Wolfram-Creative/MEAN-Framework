@@ -18,25 +18,43 @@ module.exports = function(grunt) {
             dest: 'www/js/app.js'
         }
     },
-    compass: {   
-        dev: { 
+    less: {
+        dev: {
             options: {
-                banner: '/*! <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
-                specify: 'src/sass/style.scss',
-                sassDir: 'src/sass/',
-                cssDir: 'www/css/'
+                paths: ["less"],
+                dumpLineNumbers: 'comments'
+            },
+            files: {
+                "www/css/style.less": "src/sass/style.less",
+            }
+        },
+        prod: {
+            options: {
+                paths: ["less"],
+                compress: true
+            },
+            files: {
+                 "www/css/style.less": "src/sass/style.less",
             }
         }
     },
     watch: {
         scripts: {
-            files: ['src/**/*.js', '*.js', 'src/**/*.scss'],
-            tasks: ['concat', 'compass'],
+            files: ['src/**/*.js', '*.js', 'src/**/*.less'],
+            tasks: ['concat'],
             options: {
                 spawn: false,
                 livereload: true
             },
         },
+        styles: {
+            files: ['src/**/*.less'],
+            tasks: ['less'],
+            options: {
+                spawn: false,
+                livereload: true
+            },
+        }
     },
     nodemon: {
       dev: {
@@ -67,14 +85,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
 
 
   // Default task(s).
   grunt.registerTask('server', ['concurrent:dev']);
-  grunt.registerTask('default', ['compass', 'concat', 'uglify']);
+  grunt.registerTask('default', ['less', 'concat', 'uglify']);
 
 
 };
