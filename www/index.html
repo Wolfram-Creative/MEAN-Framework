@@ -1,37 +1,36 @@
 <!doctype html>
 <html lang="en" ng-app="app">
-<head>
-    <meta charset="UTF-8">
-    <title ng-bind="appTitle + ' &mdash; ' + title">MEAN Framework</title>
-    <link rel="stylesheet" href="vendor/css/normalize.css">
-    <link rel="stylesheet" href="vendor/css/foundation.min.css">
-</head>
-<body>
-    <div id="fb-root"></div>
-    <div ng-header id="header"></div>
-    <ng-view id="view" class="row" style="width:100%; max-width: 100%;" ></ng-view>
-    <script>
-      // window.fbAsyncInit = function() {
-      //   FB.init({
-      //       appId      : '',
-      //       channelUrl : '',
-      //       status     : true,
-      //       xfbml      : true
-      //   });
-      // };
-      // (function(d, s, id){
-      //    var js, fjs = d.getElementsByTagName(s)[0];
-      //    if (d.getElementById(id)) {return;}
-      //    js = d.createElement(s); js.id = id;
-      //    js.src = "//connect.facebook.net/en_US/all.js";
-      //    fjs.parentNode.insertBefore(js, fjs);
-      //  }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <link rel="stylesheet" href="www/css/style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
-    <script src="vendor/js/Chart.min.js"></script>
-    <script src="www/js/app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title ng-bind="appTitle + ' &mdash; ' + title">MEAN Framework</title>
+        <link rel="stylesheet" href="www/css/style.css">
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <div ng-header id="header"></div>
+        <ng-view id="view" class="row" style="width:100%; max-width: 100%;" ></ng-view>
+        <script>
+        // window.fbAsyncInit = function() {
+        //   FB.init({
+        //       appId      : '',
+        //       channelUrl : '',
+        //       status     : true,
+        //       xfbml      : true
+        //   });
+        // };
+        // (function(d, s, id){
+        //    var js, fjs = d.getElementsByTagName(s)[0];
+        //    if (d.getElementById(id)) {return;}
+        //    js = d.createElement(s); js.id = id;
+        //    js.src = "//connect.facebook.net/en_US/all.js";
+        //    fjs.parentNode.insertBefore(js, fjs);
+        //  }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+        <script src="vendor/js/Chart.min.js"></script>
+        <script src="www/js/app.js"></script>
+    </body>
 </html>
