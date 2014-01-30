@@ -1,0 +1,1059 @@
+/*! 
+Fractional Grid system
+Created by Brian Noah brianjoshuanoah@gmail.com for J.Hilburn
+Least common denominator is taken into account.
+two_fourths = one_half, so two_fourths doesn't exist. 
+*/
+
+
+.responsive_container {
+	margin: 0 auto;
+	paddomg: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	position: relative;
+	@media only screen and (min-width: 1400px) {
+		width: 1366px;
+	}
+	@media only screen and (min-width: 1200px) and (max-width: 1399px){
+		width: 1170px;
+	}
+	@media only screen and (min-width: 980px) and (max-width: 1199px) {
+		width: 960px;
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 979px) {
+		width: 724px;
+	}
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
+
+.fractional_row {
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	position: relative;
+	* {
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		position: relative;
+	}
+	.fractional_row {
+		width: auto;
+	}
+	&:before {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.display_none {
+		display: none;
+	}
+	.columns, .column { 
+		float:left; 
+		clear:none;
+		min-height: 1px;
+		//
+		//	Breakpoint is 767px. 
+		//	By default columns break to 100% below 767px.
+		//
+		//	Usage:
+		//	Can be used in conjunction with small-size fraction and medium-sized fraction.
+		//	<div class="one_half columns"> = <div class="one_half column">
+		//	<div class="one column"> = <div class="whole column"> = <div class="full column">
+		//
+
+		//halfs
+		&.one_half {
+			width: 100*1/2%;
+		}
+		//thirds
+		&.one_third {
+			width: 100*1/3%;
+		}
+		&.two_thirds {
+			width: 100*2/3%;
+		}
+		//fourths
+		&.one_fourth {
+			width: 100*1/4%;
+		}
+		&.one_quarter {
+			width: 100*1/4%;
+		}
+		&.three_fourths {
+			width: 100*3/4%;
+		}
+		&.three_quarters {
+			width: 100*3/4%;
+		}
+		//fifths
+		&.one_fifth {
+			width: 100*1/5%;
+		}
+		&.two_fifths {
+			width: 100*2/5%;
+		}
+		&.three_fifths {
+			width: 100*3/5%;
+		}
+		&.four_fifths {
+			width: 100*4/5%;
+		}
+		//sixths
+		&.one_sixth {
+			width: 100*1/6%;
+		}
+		&.five_sixths {
+			width: 100*5/6%;
+		}
+		//eighth
+		&.one_eighth {
+			width: 100*1/8%;
+		}
+		&.three_eighths {
+			width: 100*3/8%;
+		}
+		&.five_eighths {
+			width: 100*5/8%;
+		}
+		&.seven_eighths {
+			width: 100*7/8%;
+		}
+		//tenths
+		&.one_tenth {
+			width: 100*1/10%;
+		}
+		&.three_tenths {
+			width: 100*3/10%;
+		}
+		&.seven_tenths {
+			width: 100*7/10%;
+		}
+		&.nine_tenths {
+			width: 100*9/10%;
+		}
+		//twelfths
+		&.one_twelfth {
+			width: 100*1/12%;
+		}
+		&.five_twelfths {
+			width: 100*5/12%;
+		}
+		&.seven_twelfths {
+			width: 100*7/12%;
+		}
+		&.nine_twelfths {
+			width: 100*9/12%;
+		}
+		&.eleven_twelfths {
+			width: 100*11/12%;
+		}
+		//whole
+		&.whole, &.one, &.full {
+			width: 100%;
+		}
+
+		//
+		//	Breakpoint is 767px. 
+		//	By default columns break to 100% below 767px
+		//	adding the following overrides layout on smaller devices
+		//	to match fractions.
+		//
+		//	Usage:
+		//	Can be used in conjunction with full-size fraction and small-fraction.
+		//	<div class="one_half small_one_half columns">
+		//
+
+		&.small_left {
+			@media only screen and (max-width: 767px) {
+				float: left !important;
+			}
+		}
+		&.small_right {
+			@media only screen and (max-width: 767px) {
+				float: right !important;
+			}
+		}
+
+		&.small_one_half {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/2% !important;
+			}
+		}
+		//thirds
+		&.small_one_third {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/3% !important;
+			}
+		}
+		&.small_two_thirds {
+			@media only screen and (max-width: 767px) {
+				width: 100*2/3% !important;
+			}
+		}
+		//fourths
+		&.small_one_fourth {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/4% !important;
+			}
+		}
+		&.small_one_quarter {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/4% !important;
+			}
+		}
+		&.small_three_fourths {
+			@media only screen and (max-width: 767px) {
+				width: 100*3/4% !important;
+			}
+		}
+		&.small_three_quarters {
+			@media only screen and (max-width: 767px) {
+				width: 100*3/4% !important;
+			}
+		}
+		//fifths
+		&.small_one_fifth {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/5% !important;
+			}
+		}
+		&.small_two_fifths {
+			@media only screen and (max-width: 767px) {
+				width: 100*2/5% !important;
+			}
+		}
+		&.small_three_fifths {
+			@media only screen and (max-width: 767px) {
+				width: 100*3/5% !important;
+			}
+		}
+		&.small_four_fifths {
+			@media only screen and (max-width: 767px) {
+				width: 100*4/5% !important;
+			}
+		}
+		//sixths
+		&.small_one_sixth {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/6% !important;
+			}
+		}
+		&.small_five_sixths {
+			@media only screen and (max-width: 767px) {
+				width: 100*5/6% !important;
+			}
+		}
+		//eighth
+		&.small_one_eighth {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/8% !important;
+			}
+		}
+		&.small_three_eighths {
+			@media only screen and (max-width: 767px) {
+				width: 100*3/8% !important;
+			}
+		}
+		&.small_five_eighths {
+			@media only screen and (max-width: 767px) {
+				width: 100*5/8% !important;
+			}
+		}
+		&.small_seven_eighths {
+			@media only screen and (max-width: 767px) {
+				width: 100*7/8% !important;
+			}
+		}
+		//tenths
+		&.small_one_tenth {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/10% !important;
+			}
+		}
+		&.small_three_tenths {
+			@media only screen and (max-width: 767px) {
+				width: 100*3/10% !important;
+			}
+		}
+		&.small_seven_tenths {
+			@media only screen and (max-width: 767px) {
+				width: 100*7/10% !important;
+			}
+		}
+		&.small_nine_tenths {
+			@media only screen and (max-width: 767px) {
+				width: 100*9/10% !important;
+			}
+		}
+		//twelfths
+		&.small_one_twelfth {
+			@media only screen and (max-width: 767px) {
+				width: 100*1/12% !important;
+			}
+		}
+		&.small_five_twelfths {
+			@media only screen and (max-width: 767px) {
+				width: 100*5/12% !important;
+			}
+		}
+		&.small_seven_twelfths {
+			@media only screen and (max-width: 767px) {
+				width: 100*7/12% !important;
+			}
+		}
+		&.small_nine_twelfths {
+			@media only screen and (max-width: 767px) {
+				width: 100*9/12% !important;
+			}
+		}
+		&.small_eleven_twelfths {
+			@media only screen and (max-width: 767px) {
+				width: 100*11/12% !important;
+			}
+		}
+		//whole
+		&.small_whole, &.small_one, &.small_full {
+			@media only screen and (max-width: 767px) {
+				width: 100% !important;
+			}
+		}
+
+		
+		//
+		//	Breakpoint is 480px and 767px. 
+		//	By default columns break to 100% below 767px
+		//	adding the following overrides layout on smaller devices
+		//	to match fractions on devices bigger than 480px but smaller than 768px.
+		//	
+		//	Usage:
+		//	Can be used in conjunction with full-size fraction and small-fraction.
+		//	<div class="one_half small_one_half medium_one_third columns">
+		//
+
+		.medium_text_right {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				text-align: right !important;
+			}
+		}
+		.medium_text_left {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				text-align: left !important;
+			}
+		}
+
+		&.medium_left {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				float: left !important;
+			}
+		}
+		&.medium_right {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				float: right !important;
+			}
+		}
+
+		&.medium_one_half {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/2% !important;
+			}
+		}
+		//thirds
+		&.medium_one_third {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/3% !important;
+			}
+		}
+		&.medium_two_thirds {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*2/3% !important;
+			}
+		}
+		//fourths
+		&.medium_one_fourth {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/4% !important;
+			}
+		}
+		&.medium_one_quarter {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/4% !important;
+			}
+		}
+		&.medium_three_fourths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*3/4% !important;
+			}
+		}
+		&.medium_three_quarters {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*3/4% !important;
+			}
+		}
+		//fifths
+		&.medium_one_fifth {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/5% !important;
+			}
+		}
+		&.medium_two_fifths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*2/5% !important;
+			}
+		}
+		&.medium_three_fifths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*3/5% !important;
+			}
+		}
+		&.medium_four_fifths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*4/5% !important;
+			}
+		}
+		//sixths
+		&.medium_one_sixth {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/6% !important;
+			}
+		}
+		&.medium_five_sixths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*5/6% !important;
+			}
+		}
+		//eighth
+		&.medium_one_eighth {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/8% !important;
+			}
+		}
+		&.medium_three_eighths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*3/8% !important;
+			}
+		}
+		&.medium_five_eighths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*5/8% !important;
+			}
+		}
+		&.medium_seven_eighths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*7/8% !important;
+			}
+		}
+		//tenths
+		&.medium_one_tenth {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/10% !important;
+			}
+		}
+		&.medium_three_tenths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*3/10% !important;
+			}
+		}
+		&.medium_seven_tenths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*7/10% !important;
+			}
+		}
+		&.medium_nine_tenths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*9/10% !important;
+			}
+		}
+		//twelfths
+		&.medium_one_twelfth {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*1/12% !important;
+			}
+		}
+		&.medium_five_twelfths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*5/12% !important;
+			}
+		}
+		&.medium_seven_twelfths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*7/12% !important;
+			}
+		}
+		&.medium_nine_twelfths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*9/12% !important;
+			}
+		}
+		&.medium_eleven_twelfths {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100*11/12% !important;
+			}
+		}
+		//whole
+		&.medium_whole, &.medium_one, &.medium_full {
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				width: 100% !important;
+			}
+		}
+
+
+		//////
+
+		&:last-of-type {
+			float:right;
+		}
+		&:first-of-type {
+			float:left;
+		}
+
+		&.centered {
+			margin-left:auto;
+			margin-right:auto;
+			float:none;
+		}
+		&.right {
+			float: right !important;
+		}
+		&.left {
+			float: left !important;
+		}
+		@media only screen and (max-width : 767px) { 
+				width: 100% !important;
+		}
+	}
+	&.large_break {
+		@media only screen and (min-width : 767px) { 
+			.columns, .column {
+				float:none;
+				width:auto;
+			}
+			&:before {
+				display: none;
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.large_left {
+	float: left;
+}
+
+.large_right {
+	float: right;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.text_right {
+	text-align: right;
+}
+.text_left {
+	text-align: left;
+}
+.text_center {
+	text-align: center;
+}
+
+.small_text_right {
+	@media only screen and (max-width: 767px) {
+		text-align: right !important;
+	}
+}
+.small_text_left {
+	@media only screen and (max-width: 767px) {
+		text-align: left !important;
+	}
+}
+
+.show_small {
+	@media only screen and (max-width : 767px) { 
+		display: block !important;
+	}
+}
+
+.show_medium {
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		display: block !important;
+	}
+}
+
+.show_large {
+	@media only screen and (min-width: 768px) {
+		display: block;
+	}
+}
+
+.hide_small {
+	@media only screen and (max-width : 767px) { 
+		display: none;
+	}
+}
+
+.hide_medium {
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		display: none !important;
+	}
+}
+
+.hide_large {
+	@media only screen and (min-width: 768px) {
+		display: none !important;
+	}
+}
+.hide_desktop {
+	@media only screen and (min-width: 1025px) {
+		display: none !important;
+	}
+}
+.hide_mobile {
+	@media only screen and (max-width: 1024px) {
+		display: none !important;
+	}
+}
+
+.show_mobile {
+	@media only screen and (max-width: 1024px) {
+		display: block !important;
+	}
+}
+
+.small_no_padding {
+	@media only screen and (max-width : 767px) { 
+		padding: 0 !important;
+	}
+}
+
+.no_border {
+	border: 0 !important;
+}
+
+.small_no_border {
+	@media only screen and (max-width : 767px) { 
+		border: 0 !important;
+	}
+}
+
+.only_small_no_border {
+	@media only screen and (max-width : 479px) { 
+		border: 0 !important;
+	}
+}
+
+.medium_no_border {
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		border: 0 !important;
+	}
+}
+
+.large_no_border {
+	@media only screen and (min-width : 767px) { 
+		border: 0 !important;
+	}
+}
+
+.display_block {
+	display: block;
+}
+.small_display_block {
+	@media only screen and (max-width : 767px) { 
+		display: block;
+	}
+}
+.medium_display_block {
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		display: block;
+	}
+}
+.small_display_inline {
+	@media only screen and (max-width : 767px) { 
+		display: inline !important;
+	}
+}
+.medium_display_inline {
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		display: inline !important;
+	}
+}
+
+.display_inline_block {
+	display: inline-block;
+}
+
+.padding_0 {
+	padding: 0 !important;
+}
+
+.padding_2 {
+	padding: 2px;
+}
+.padding_2_top {
+	padding-top: 2px;
+}
+.padding_2_right {
+	padding-right: 2px;
+}
+.padding_2_bottom {
+	padding-bottom: 2px;
+}
+.padding_2_left {
+	padding-left: 2px;
+}
+.padding_3 {
+	padding: 3px;
+}
+.padding_3_top {
+	padding-top: 3px;
+}
+.padding_3_right {
+	padding-right: 3px;
+}
+.padding_3_bottom {
+	padding-bottom: 3px;
+}
+.padding_3_left {
+	padding-left: 3px;
+}
+.padding_5 {
+	padding: 5px;
+}
+.padding_5_top {
+	padding-top: 5px;
+}
+.padding_5_right {
+	padding-right: 5px;
+}
+.padding_5_bottom {
+	padding-bottom: 5px;
+}
+.padding_5_left {
+	padding-left: 5px;
+}
+.margin_5 {
+	margin: 5px;
+}
+.margin_5_top {
+	margin-top: 5px;
+}
+.margin_5_right {
+	margin-right: 5px;
+}
+.margin_5_bottom {
+	margin-bottom: 5px;
+}
+.margin_5_left {
+	margin-left: 5px;
+}
+.small_padding_5 {
+	@media only screen and (max-width : 767px) { 
+		padding: 5px !important;
+	}
+}
+.padding_10 { 
+	padding: 10px;
+}
+.padding_10_top {
+	padding-top: 10px;
+}
+.padding_10_right {
+	padding-right: 10px;
+}
+.padding_10_bottom {
+	padding-bottom: 10px;
+}
+.padding_10_left {
+	padding-left: 10px;
+}
+.margin_10 {
+	margin: 10px;
+}
+.margin_10_top {
+	margin-top: 10px !important;
+}
+.margin_10_right {
+	margin-right: 10px !important;
+}
+.margin_10_bottom {
+	margin-bottom: 10px !important;
+}
+.margin_10_left {
+	margin-left: 10px !important;
+}
+.small_no_margin { 
+	@media only screen and (max-width : 767px) { 
+		margin: 0 !important;
+	}
+}
+.small_padding_10 {
+	@media only screen and (max-width : 767px) { 
+		padding: 10px !important;
+	}
+}
+.padding_15 {
+	padding: 15px;
+}
+.padding_15_top {
+	padding-top: 15px;
+}
+.padding_15_right {
+	padding-right: 15px;
+}
+.padding_15_bottom {
+	padding-bottom: 15px;
+}
+.padding_15_left {
+	padding-left: 15px;
+}
+.padding_20 {
+	padding:20px;
+}
+.padding_20_top {
+	padding-top: 20px;
+}
+.padding_20_right {
+	padding-right: 20px;
+}
+.padding_20_bottom {
+	padding-bottom: 20px;
+}
+.padding_20_left {
+	padding-left: 20px;
+}
+.small_padding_20 {
+	@media only screen and (max-width : 767px) { 
+		padding: 20px !important;
+	}
+}
+.small_padding_20_top {
+	@media only screen and (max-width : 767px) { 
+		padding-top: 20px !important;
+	}
+}
+.margin_20 {
+	margin: 20px;
+}
+.margin_20_top {
+	margin-top: 20px !important;
+}
+.margin_20_right {
+	margin-right: 20px !important;
+}
+.margin_20_bottom {
+	margin-bottom: 20px !important;
+}
+.margin_20_left {
+	margin-left: 20px !important;
+}
+.small_padding_20 {
+	@media only screen and (max-width : 767px) { 
+		padding: 20px !important;
+	}
+}
+.padding_25 {
+	padding:25px;
+}
+.padding_25_top {
+	padding-top: 25px;
+}
+.padding_25_right {
+	padding-right: 25px;
+}
+.padding_25_bottom {
+	padding-bottom: 25px;
+}
+.padding_25_left {
+	padding-left: 25px;
+}
+.small_padding_25 {
+	@media only screen and (max-width : 767px) { 
+		padding: 25px !important;
+	}
+}
+.padding_30 {
+	padding:30px;
+}
+.padding_30_top {
+	padding-top: 30px;
+}
+.padding_30_right {
+	padding-right: 30px;
+}
+.padding_30_bottom {
+	padding-bottom: 30px;
+}
+.padding_30_left {
+	padding-left: 30px;
+}
+.small_padding_30 {
+	@media only screen and (max-width : 767px) { 
+		padding: 30px !important;
+	}
+}
+.padding_40 {
+	padding:40px;
+}
+.padding_40_top {
+	padding-top: 40px;
+}
+.padding_40_right {
+	padding-right: 40px;
+}
+.padding_40_bottom {
+	padding-bottom: 40px;
+}
+.padding_40_left {
+	padding-left: 40px;
+}
+.padding_50 {
+	padding:50px;
+}
+.padding_50_top {
+	padding-top: 50px;
+}
+.padding_50_right {
+	padding-right: 50px;
+}
+.padding_50_bottom {
+	padding-bottom: 50px;
+}
+.padding_50_left {
+	padding-left: 50px;
+}
+.margin_50 {
+	margin:50px;
+}
+.margin_50_top {
+	margin-top: 50px;
+}
+.margin_50_right {
+	margin-right: 50px;
+}
+.margin_50_bottom {
+	margin-bottom: 50px;
+}
+.margin_50_left {
+	margin-left: 50px;
+}
+.padding_55 {
+	padding:55px;
+}
+.padding_55_top {
+	padding-top: 55px;
+}
+.padding_55_right {
+	padding-right: 55px;
+}
+.padding_55_bottom {
+	padding-bottom: 55px;
+}
+.padding_55_left {
+	padding-left: 55px;
+}
+
+.padding_65 {
+	padding:65px;
+}
+.padding_65_top {
+	padding-top: 65px;
+}
+.padding_65_right {
+	padding-right: 65px;
+}
+.padding_65_bottom {
+	padding-bottom: 65px;
+}
+.padding_65_left {
+	padding-left: 65px;
+}
+
+.margin_65 {
+	margin:65px;
+}
+.margin_65_top {
+	margin-top: 65px;
+}
+.margin_65_right {
+	margin-right: 65px;
+}
+.margin_65_bottom {
+	margin-bottom: 65px;
+}
+.margin_65_left {
+	margin-left: 65px;
+}
+
+.padding_75 {
+	padding:75px;
+}
+.padding_75_top {
+	padding-top: 75px;
+}
+.padding_75_right {
+	padding-right: 75px;
+}
+.padding_75_bottom {
+	padding-bottom: 75px;
+}
+.padding_75_left {
+	padding-left: 75px;
+}
+
+.padding_100 {
+	padding:100px;
+}
+.padding_100_top {
+	padding-top: 100px;
+}
+.padding_100_right {
+	padding-right: 100px;
+}
+.padding_100_bottom {
+	padding-bottom: 100px;
+}
+.padding_100_left {
+	padding-left: 100px;
+}
+
+.margin_100 {
+	margin:100px;
+}
+.margin_100_top {
+	margin-top: 100px;
+}
+.margin_100_right {
+	margin-right: 100px;
+}
+.margin_100_bottom {
+	margin-bottom: 100px;
+}
+.margin_100_left {
+	margin-left: 100px;
+}

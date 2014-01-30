@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'www/js/app.js',
-        dest: 'www/js/app.min.js'
+        dest: 'www/js/app.js'
       }
     },
     concat: {   
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
                 dumpLineNumbers: 'comments'
             },
             files: {
-                "www/css/style.less": "src/sass/style.less",
+                "www/css/style.css": "src/less/style.less",
             }
         },
         prod: {
@@ -34,13 +34,13 @@ module.exports = function(grunt) {
                 compress: true
             },
             files: {
-                 "www/css/style.less": "src/sass/style.less",
+                 "www/css/style.css": "src/less/style.less",
             }
         }
     },
     watch: {
         scripts: {
-            files: ['src/**/*.js', '*.js', 'src/**/*.less'],
+            files: ['src/**/*.js', '*.js'],
             tasks: ['concat'],
             options: {
                 spawn: false,
@@ -48,12 +48,16 @@ module.exports = function(grunt) {
             },
         },
         styles: {
-            files: ['src/**/*.less'],
-            tasks: ['less'],
+            files: ['src/less/*.less', 'src/less/**/*.less'],
+            tasks: ['less:dev'],
             options: {
                 spawn: false,
                 livereload: true
             },
+        },
+        sprites: {
+            files: ['src/img/icon/*.png'],
+            tasks: ['sprite', 'less:dev']
         }
     },
     nodemon: {
@@ -78,6 +82,24 @@ module.exports = function(grunt) {
           logConcurrentOutput: true
         }
       }
+    },
+    sprite: {
+      icon: {
+        src: 'src/img/icon/*.png',
+        destImg: 'www/img/sprites/sprites_icon.png',
+        destCSS: 'src/less/sprites/icon.less',
+        imgPath: '/img/sprites/sprites_icon.png',
+        algorithm: 'binary-tree',
+        padding: 50,
+        engine: 'auto',
+        cssFormat: 'css',
+        cssOpts: {
+          'functions': false,
+          'cssClass': function (item) {
+            return '.icon-' + item.name;
+          }
+        }
+      }
     }
   });
 
@@ -88,11 +110,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
+  grunt.loadNpmTasks('grunt-spritesmith');
 
 
   // Default task(s).
   grunt.registerTask('server', ['concurrent:dev']);
-  grunt.registerTask('default', ['less', 'concat', 'uglify']);
+  grunt.registerTask('default', ['sprite','less:dev', 'concat', 'uglify']);
+  grunt.registerTask('prod', ['sprite', 'less:prod', 'concat', 'uglify']);
 
 
 };

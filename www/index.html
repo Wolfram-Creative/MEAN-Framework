@@ -1,36 +1,27 @@
 <!doctype html>
-<html lang="en" ng-app="app">
+<html xmlns:ng="http://angularjs.org"  lang="en" ng-app="app">
     <head>
         <meta charset="UTF-8">
         <title ng-bind="appTitle + ' &mdash; ' + title">MEAN Framework</title>
-        <link rel="stylesheet" href="www/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel ='shortcut icon' href="/img/favicon.png">
     </head>
     <body>
-        <div id="fb-root"></div>
         <div ng-header id="header"></div>
-        <ng-view id="view" class="row" style="width:100%; max-width: 100%;" ></ng-view>
-        <script>
-        // window.fbAsyncInit = function() {
-        //   FB.init({
-        //       appId      : '',
-        //       channelUrl : '',
-        //       status     : true,
-        //       xfbml      : true
-        //   });
-        // };
-        // (function(d, s, id){
-        //    var js, fjs = d.getElementsByTagName(s)[0];
-        //    if (d.getElementById(id)) {return;}
-        //    js = d.createElement(s); js.id = id;
-        //    js.src = "//connect.facebook.net/en_US/all.js";
-        //    fjs.parentNode.insertBefore(js, fjs);
-        //  }(document, 'script', 'facebook-jssdk'));
-        </script>
+        <div ng-view id="view"></div>
 
-
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
-        <script src="vendor/js/Chart.min.js"></script>
-        <script src="www/js/app.js"></script>
+        <!-- HTML5 shim & jquery 1.11, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <![endif]-->
+        <!--[if gt IE 8]><!--> 
+            <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+        <!--<![endif]-->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-cookies.min.js"></script>
+        <script src="/js/app.js"></script>
     </body>
 </html>

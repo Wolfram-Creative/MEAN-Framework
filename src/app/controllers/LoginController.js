@@ -1,14 +1,20 @@
-app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall', '_$local', function($rootScope, $scope, $location, apiCall, _$local) {
+app.controller("LoginController", ['$rootScope', '$routeParams', '$scope', '$location', 'apiCall', '_$local', function($rootScope, $routeParams, $scope, $location, apiCall, _$local) {
 	'use strict';
 	$rootScope.title = 'Log In';
 	$scope.root = $rootScope;
-	$scope.logIn = function() {
-		apiCall.login($scope.credentials).then(function (response) {
-			console.log(response);
-			if (response.success) {
-				console.log('success');
-				$rootScope.user = response.body;
+	if ($rootScope.logged_in) {
+		$location.path('/');
+	}
+
+	$scope.loginUser = function() {
+		apiCall.logIn($scope.credentials).then(function (response) {
+			var data = response.data;
+			if (data.success) {
+				var user = data.body;
+				_$local.set('user', user);
+				$rootScope.user = user;
 				$rootScope.logged_in = true;
+				$location.path('/');
 			}
 		});
 	};
@@ -20,7 +26,7 @@ app.controller("LoginController", ['$rootScope', '$scope', '$location', 'apiCall
 				_$local.set('user', user);
 				$rootScope.user = user;
 				$rootScope.logged_in = true;
-				history.back();
+				$location.path('/');
 			}
 		});
 	};

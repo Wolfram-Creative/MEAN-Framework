@@ -1,0 +1,77 @@
+@white: #fff;
+@white_50: rgba(255,255,255,.5);
+@green: #BCD695;
+@black: #000000;
+@dark_gray: #333333;
+@gray: #999999;
+@gold: #998260;
+
+@import 'plugins/normalize'; 
+@import 'plugins/fractional_grid'; 
+
+span[class*='icon-'] {
+  display: block;
+}
+i[class*='icon-'] {
+  display: inline-block;
+}
+@import 'sprites/icon'; 
+
+h1,h2,h3,h4,h5 {
+  text-align: center;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light;
+  font-weight: normal;
+} 
+
+.gold {
+  color: @gold;
+} 
+ 
+button {
+    background-color: @black; 
+    width: 100%;
+    height:45px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 0;
+    color: @white;
+}
+input {
+	width:100%; 
+	height:45px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left:10px;
+  border:0;
+  border-bottom: 1px solid @gray;
+  &.ng-valid.ng-dirty {
+    border-left:3px solid @green;
+  }
+  &.ng-invalid {
+    border-left:3px solid red;
+    &.ng-pristine {
+      border:0;
+      border-bottom: 1px solid @gray;
+    }
+  }
+  &:required {
+    box-shadow:none;
+  }
+}
+
+@import 'main/header'; 
+@import 'main/body'; 
+@import 'main/footer'; 
+
+body {
+	font-size: 12px;
+	background: @white;
+	color: @black;
+	font-family: HelveticaNeue-Light, Helvetica Neue Light;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+}

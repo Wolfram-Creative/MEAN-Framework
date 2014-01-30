@@ -1,0 +1,44 @@
+#header {
+	background-color: @gray;
+	color: @white;
+	a {
+		color: @white;
+		text-decoration: none;
+	}
+	.logo {
+		font-size: 32px;
+		text-align: left;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 100;
+		a {
+			vertical-align: top;		
+		}
+	}
+	.nav_right {
+		text-align: right;
+		letter-spacing: .1em;
+		line-height: 44px;
+		text-transform: uppercase;
+
+		span {
+			margin-left:10px;
+			a {
+				color: @white;
+			}
+			&#log_out {
+				cursor: pointer;
+			}
+			&:after {
+				content: '|';
+				margin-left:10px;
+			}
+			&:last-of-type {
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+}

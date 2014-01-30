@@ -1,0 +1,42 @@
+<div id="register" class="fractional_row padding_50_top">
+    <div class="one_half column centered">
+        <form ng-submit="createUser()">
+            <div class="fractional_row">
+                <div class="one_half columns padding_2_right">
+                    <input type="text" name="first_name" placeholder="First Name" ng-model="new_user.first_name" required/>
+                </div>
+                <div class="one_half columns padding_2_left">
+                    <input type="text" name="last_name" placeholder="Last Name" ng-model="new_user.last_name" required/>
+                </div>
+                 <div class="one_half columns padding_2_right">
+                    <input type="email" name="email" placeholder="email" ng-model="new_user.email" required/>
+                </div>
+                <div class="one_half columns padding_2_left">
+                    <input type="text" name="username" placeholder="Username" ng-model="new_user.username" required/>
+                </div>
+                <div class="one_half columns padding_2_right">
+                    <input type="password" name="password" placeholder="Password" ng-model="new_user.password" required/>
+                </div>
+                <div class="one_half columns padding_2_left">
+                    <input type="password" name="password" placeholder="Repeat Password" ng-model="new_password" required/>
+                </div>
+                <div class="one_half columns padding_2_right">
+                    <input type="tel" name="phone" placeholder="Phone" ng-model="new_user.phone"/>
+                </div>
+                <div class="one_half columns padding_2_left">
+                    <input type="zip" name="zip" placeholder="Postal Code" ng-model="new_user.address.zip"/>
+                </div>
+            </div>
+            <div class="one column margin_20_top">
+                <div class="one_half columns padding_2_right">
+                   <button type="submit" class="button large expand">Register</button>
+                </div>
+                <div class="one_half columns padding_2_left">
+                    <a href="/login">
+                        <button>Log In</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

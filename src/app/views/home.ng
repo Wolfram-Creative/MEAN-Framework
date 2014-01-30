@@ -1,23 +1,17 @@
-<div id="home" class="row">
-	<div class="large-6 columns">
-		<canvas id="homePageChart" width="1200" height="1200"></canvas>
+<div id="main">
+	<div class="responsive_container">
+		<div class="fractional_row" id="hero"></div>
 	</div>
-	<div class="large-6 columns">
-		<div class="login">
+</div>
 
-		</div>
-		<div class="search_events">
-			<h2>Search</h2>
-			<div class="row search_fields">
-				<div class="large-12 columns">
-					<input placeholder="First Name" ng-keyup="search()" ng-model="search_event_name">
-				</div>
-			</div>
-		</div>
-		<div id="search_results_container">
-			<div class="search_result" ng-repeat="search_result in search_results" ng-click="goToEvent($event)" id="{{search_result.name}}">
-				<span>{{search_result.title}}</span>
-			</div>
+<div id="info">
+	<div class="responsive_container">
+		<div class="fractional_row" id="github_info">
+
+			<h1>Open Forking invitation at:</h1>
+			<h2><a  target="_blank" href="https://github.com/Wolfram-Creative/MEAN-Framework">https://github.com/Wolfram-Creative/MEAN-Framework</a></h2>
+			<h1>Learn more about Mongo,Express,Angular & Node:</h1>
+			<h3><a  target="_blank" href="http://www.mongodb.org/">Mongo</a> <a  target="_blank" href="http://expressjs.com/">Express</a> <a  target="_blank" href="http://angularjs.org/">Angualar</a> <a  target="_blank" href="http://nodejs.org/">Node</a></h3>
 		</div>
 	</div>
 </div>

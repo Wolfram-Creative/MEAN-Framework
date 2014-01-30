@@ -1,7 +1,14 @@
-<div class="large-12 columns">
-	<h1>MEAN Framework</h1>
-	<h2 ng-if="root.logged_in">{{root.user.first_name}} {{root.user.last_name}}</h2>
-	<h2>{{root.title}}</h2>
-	<a ng-if="!root.logged_in" href="/login">Log In</a>
-	<a ng-if="root.logged_in" ng-click="logOut()">Log Out</a>
+<div class="responsive_container">
+	<div class="fractional_row padding_10_left padding_10_right">
+		<div class="one_quarter columns logo padding_2_top text_align_center">
+			<a href="/" >
+				ME<i class="icon-angularjs_35 margin_5_right"></i>N
+			</a>
+		</div>
+		<div class="three_quarters columns text_right nav_right">
+			<span ng-if="root.logged_in"><a ng-href="/{{root.user.username}}">{{root.user.first_name}} {{root.user.last_name}}</a></span>
+			<span ng-if="!root.logged_in"><a href="/login">Log In</a></span>
+			<span id="log_out" ng-if="root.logged_in" ng-click="logOut()">Log Out</span>
+		</div>
+	</div>
 </div>

@@ -5,7 +5,8 @@ app.factory('apiCall', ['$http', function($http) {
             return $http.post('/api/users/create/', obj);
         },
         logIn: function(obj) {
+            console.log(obj);
             return $http.post('/api/users/log_in/', obj);
-        }
+        },
     };
 }]);
