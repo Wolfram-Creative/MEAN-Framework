@@ -1,17 +1,22 @@
-Angular and Node app. Utilizing Grunt
+<a href="http://wolfram-mean.herokuapp.com/"><img src="http://wolfram-mean.herokuapp.com/img/homepage/mean.png" style="width:100%"></a>
 
-Based off an Angular(v1.1.5) View-Controller framework utilizing a node api server as your model.
+<h1>MEAN Framework</h1>
+<h2>Built for the new internets</h2>
+<a  target="_blank" href="http://www.mongodb.org/">Mongo</a>, <a  target="_blank" href="http://expressjs.com/">Express</a>, <a  target="_blank" href="http://angularjs.org/">Angualar</a>, and <a  target="_blank" href="http://nodejs.org/">Node</a>
+
+
+Currently built with Angular(v1.2.7) View-Controller framework utilizing a node api server as your model.
 
 Includes Zurb Foundation & normalize.css
 
 index.html and compiled files are located and served from the www server. 
-// TODO: concat angular templates and retrieve with router template.
+
 
 Directions
 
-1. Install nvm and use node 0.10.20
+1. Install nvm and use node 0.10.24
 
-        nvm alias default 0.10.22
+        nvm alias default 0.10.24
 
 2. Install node and grunt dependencies
 
