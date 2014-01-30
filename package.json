@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "*",
     "ejs": "*",
-    "mongojs": "*"
+    "mongojs": "*",
+    "dotenv": "~0.2.3"
   }
 }

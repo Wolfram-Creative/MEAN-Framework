@@ -1,3 +1,10 @@
+var dotenv = require('dotenv');
+dotenv.load();
+
+if (typeof process.env.port !== 'undefined') {
+	process.env.PORT = process.env.port;
+}
+
 model = require('./models');
 databaseUrl = "mean:123456@troup.mongohq.com:10087/MEAN_stack";
 collections = ["users"];

@@ -5,3 +5,4 @@ node_modules
 karma.conf.js
 *.sublime-project
 *.sublime-workspace
+.env
