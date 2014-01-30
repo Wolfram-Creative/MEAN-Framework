@@ -1,6 +1,7 @@
 <div id="main">
 	<div class="responsive_container">
 		<div class="fractional_row" id="hero"></div>
+		<img src="/img/homepage/mean.png">
 	</div>
 </div>
 
