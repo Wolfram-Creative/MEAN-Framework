@@ -1849,31 +1849,35 @@ input:required {
 #header .logo a {
   vertical-align: top;
 }
-/* line 19, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 18, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+#header .logo .mean_text {
+  vertical-align: top;
+}
+/* line 22, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
 #header .nav_right {
   text-align: right;
   letter-spacing: .1em;
   line-height: 44px;
   text-transform: uppercase;
 }
-/* line 25, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 28, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
 #header .nav_right span {
   margin-left: 10px;
 }
-/* line 27, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 30, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
 #header .nav_right span a {
   color: #ffffff;
 }
-/* line 30, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 33, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
 #header .nav_right span#log_out {
   cursor: pointer;
 }
-/* line 33, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 36, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
 #header .nav_right span:after {
   content: '|';
   margin-left: 10px;
 }
-/* line 38, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 41, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
 #header .nav_right span:last-of-type:after {
   content: '';
 }
