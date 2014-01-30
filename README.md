@@ -1,9 +1,10 @@
-<a href="http://wolfram-mean.herokuapp.com/"><img src="http://wolfram-mean.herokuapp.com/img/homepage/mean.png" style="width:100%"></a>
+<a href="http://wolfram-mean.herokuapp.com/" target="_blank"><img src="http://wolfram-mean.herokuapp.com/img/homepage/mean.png" style="width:100%"></a>
 
 <h1>MEAN Framework</h1>
 <h2>Built for the new internets</h2>
 <a  target="_blank" href="http://www.mongodb.org/">Mongo</a>, <a  target="_blank" href="http://expressjs.com/">Express</a>, <a  target="_blank" href="http://angularjs.org/">Angular</a>, and <a  target="_blank" href="http://nodejs.org/">Node</a>
 
+<a href="http://wolfram-mean.herokuapp.com/" target="_blank">View live demo</a>
 
 Currently built with Angular(v1.2.7) View-Controller framework utilizing a node api server as your model.
 
