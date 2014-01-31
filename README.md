@@ -1,3 +1,7 @@
+<!-- 
+Created by Brian Noah https://github.com/bjoshuanoah
+-->
+
 <a href="http://wolfram-mean.herokuapp.com/" target="_blank"><img src="http://wolfram-mean.herokuapp.com/img/homepage/mean.png" style="width:100%"></a>
 
 <h1>MEAN Framework</h1>
@@ -10,7 +14,7 @@ Currently built with Angular(v1.2.7) View-Controller framework utilizing a node 
 
 Includes Zurb Foundation & normalize.css
 
-index.html and compiled files are located and served from the www server. 
+index.html and compiled files are located and served from the www directory. If you want to just use nginx to serve your static files, just direct your virtual host to the www directory. This will bypass any node server, and you will be using the framework just for your angular app.
 
 
 Directions
