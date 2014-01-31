@@ -27,15 +27,11 @@ Directions
 
         npm install -g grunt-cli
 
-4. Install Compass
-
-        gem install compass
-
-5. Install nodemon
+4. Install nodemon
 
         npm install -g nodemon
 
-6. Run your server and watch files with concat
+5. Run your server and watch files with concat
 
         grunt server
 
