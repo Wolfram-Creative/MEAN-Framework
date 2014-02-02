@@ -5,7 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 11, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 11, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 article,
 aside,
 details,
@@ -23,7 +23,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 30, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 30, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 audio,
 canvas,
 video {
@@ -33,7 +33,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 41, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -42,7 +42,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-/* line 51, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 51, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 [hidden],
 template {
   display: none;
@@ -55,7 +55,7 @@ template {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 66, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 66, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -67,7 +67,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 76, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 76, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 body {
   margin: 0;
 }
@@ -77,21 +77,21 @@ body {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 88, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 88, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 a {
   background: transparent;
 }
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 96, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 96, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 a:focus {
   outline: thin dotted;
 }
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 104, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 104, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 a:active,
 a:hover {
   outline: 0;
@@ -103,7 +103,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 118, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 118, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -111,14 +111,14 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 127, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 127, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 135, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 135, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 b,
 strong {
   font-weight: bold;
@@ -126,14 +126,14 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 144, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 144, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 dfn {
   font-style: italic;
 }
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 152, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 152, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -142,7 +142,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 162, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 162, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 mark {
   background: #ff0;
   color: #000;
@@ -150,7 +150,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 171, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 171, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 code,
 kbd,
 pre,
@@ -161,28 +161,28 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 183, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 183, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 pre {
   white-space: pre-wrap;
 }
 /**
  * Set consistent quote types.
  */
-/* line 191, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 191, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 199, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 199, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 small {
   font-size: 80%;
 }
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 207, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 207, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 sub,
 sup {
   font-size: 75%;
@@ -190,11 +190,11 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-/* line 215, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 215, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 sup {
   top: -0.5em;
 }
-/* line 219, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 219, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 sub {
   bottom: -0.25em;
 }
@@ -204,14 +204,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 231, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 231, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 img {
   border: 0;
 }
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 239, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 239, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -221,7 +221,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 251, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 251, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 figure {
   margin: 0;
 }
@@ -231,7 +231,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 263, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 263, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -241,7 +241,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 274, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 274, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 legend {
   border: 0;
   /* 1 */
@@ -253,7 +253,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 285, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 285, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 button,
 input,
 select,
@@ -269,7 +269,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 299, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 299, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 button,
 input {
   line-height: normal;
@@ -280,7 +280,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 311, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 311, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 button,
 select {
   text-transform: none;
@@ -292,7 +292,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 324, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 324, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -305,7 +305,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 336, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 336, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -314,7 +314,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 346, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 346, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -327,7 +327,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 358, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 358, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -340,7 +340,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 370, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 370, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -348,7 +348,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 379, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 379, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -358,7 +358,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 390, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 390, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 textarea {
   overflow: auto;
   /* 1 */
@@ -371,7 +371,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 403, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/normalize.less */
+/* line 403, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/normalize.less */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -382,7 +382,7 @@ Created by Brian Noah brianjoshuanoah@gmail.com for J.Hilburn
 Least common denominator is taken into account.
 two_fourths = one_half, so two_fourths doesn't exist. 
 */
-/* line 9, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 9, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .responsive_container {
   margin: 0 auto;
   paddomg: 0;
@@ -393,36 +393,36 @@ two_fourths = one_half, so two_fourths doesn't exist.
   position: relative;
 }
 @media only screen and (min-width: 1400px) {
-  /* line 17, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 17, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .responsive_container {
     width: 1366px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  /* line 20, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 20, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .responsive_container {
     width: 1170px;
   }
 }
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 23, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 23, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .responsive_container {
     width: 960px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 27, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 27, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .responsive_container {
     width: 724px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 30, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 30, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .responsive_container {
     width: 100%;
   }
 }
-/* line 35, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 35, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row {
   width: 100%;
   padding: 0;
@@ -432,7 +432,7 @@ two_fourths = one_half, so two_fourths doesn't exist.
   -ms-box-sizing: border-box;
   position: relative;
 }
-/* line 43, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 43, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -440,164 +440,164 @@ two_fourths = one_half, so two_fourths doesn't exist.
   -ms-box-sizing: border-box;
   position: relative;
 }
-/* line 50, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 50, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .fractional_row {
   width: auto;
 }
-/* line 53, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 53, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row:before {
   content: '';
   display: block;
   clear: both;
 }
-/* line 58, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 58, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row:after {
   content: '';
   display: block;
   clear: both;
 }
-/* line 63, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 63, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .display_none {
   display: none;
 }
-/* line 66, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 66, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns,
 .fractional_row .column {
   float: left;
   clear: none;
   min-height: 1px;
 }
-/* line 81, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 81, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_half,
 .fractional_row .column.one_half {
   width: 50%;
 }
-/* line 85, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 85, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_third,
 .fractional_row .column.one_third {
   width: 33.333333333333336%;
 }
-/* line 88, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 88, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.two_thirds,
 .fractional_row .column.two_thirds {
   width: 66.66666666666667%;
 }
-/* line 92, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 92, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_fourth,
 .fractional_row .column.one_fourth {
   width: 25%;
 }
-/* line 95, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 95, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_quarter,
 .fractional_row .column.one_quarter {
   width: 25%;
 }
-/* line 98, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 98, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.three_fourths,
 .fractional_row .column.three_fourths {
   width: 75%;
 }
-/* line 101, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 101, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.three_quarters,
 .fractional_row .column.three_quarters {
   width: 75%;
 }
-/* line 105, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 105, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_fifth,
 .fractional_row .column.one_fifth {
   width: 20%;
 }
-/* line 108, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 108, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.two_fifths,
 .fractional_row .column.two_fifths {
   width: 40%;
 }
-/* line 111, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 111, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.three_fifths,
 .fractional_row .column.three_fifths {
   width: 60%;
 }
-/* line 114, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 114, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.four_fifths,
 .fractional_row .column.four_fifths {
   width: 80%;
 }
-/* line 118, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 118, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_sixth,
 .fractional_row .column.one_sixth {
   width: 16.666666666666668%;
 }
-/* line 121, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 121, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.five_sixths,
 .fractional_row .column.five_sixths {
   width: 83.33333333333333%;
 }
-/* line 125, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 125, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_eighth,
 .fractional_row .column.one_eighth {
   width: 12.5%;
 }
-/* line 128, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 128, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.three_eighths,
 .fractional_row .column.three_eighths {
   width: 37.5%;
 }
-/* line 131, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 131, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.five_eighths,
 .fractional_row .column.five_eighths {
   width: 62.5%;
 }
-/* line 134, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 134, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.seven_eighths,
 .fractional_row .column.seven_eighths {
   width: 87.5%;
 }
-/* line 138, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 138, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_tenth,
 .fractional_row .column.one_tenth {
   width: 10%;
 }
-/* line 141, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 141, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.three_tenths,
 .fractional_row .column.three_tenths {
   width: 30%;
 }
-/* line 144, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 144, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.seven_tenths,
 .fractional_row .column.seven_tenths {
   width: 70%;
 }
-/* line 147, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 147, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.nine_tenths,
 .fractional_row .column.nine_tenths {
   width: 90%;
 }
-/* line 151, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 151, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.one_twelfth,
 .fractional_row .column.one_twelfth {
   width: 8.333333333333334%;
 }
-/* line 154, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 154, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.five_twelfths,
 .fractional_row .column.five_twelfths {
   width: 41.666666666666664%;
 }
-/* line 157, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 157, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.seven_twelfths,
 .fractional_row .column.seven_twelfths {
   width: 58.333333333333336%;
 }
-/* line 160, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 160, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.nine_twelfths,
 .fractional_row .column.nine_twelfths {
   width: 75%;
 }
-/* line 163, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 163, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.eleven_twelfths,
 .fractional_row .column.eleven_twelfths {
   width: 91.66666666666667%;
 }
-/* line 167, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 167, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.whole,
 .fractional_row .column.whole,
 .fractional_row .columns.one,
@@ -607,203 +607,203 @@ two_fourths = one_half, so two_fourths doesn't exist.
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 183, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 183, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_left,
   .fractional_row .column.small_left {
     float: left !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 188, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 188, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_right,
   .fractional_row .column.small_right {
     float: right !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 194, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 194, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_half,
   .fractional_row .column.small_one_half {
     width: 50% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 200, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 200, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_third,
   .fractional_row .column.small_one_third {
     width: 33.333333333333336% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 205, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 205, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_two_thirds,
   .fractional_row .column.small_two_thirds {
     width: 66.66666666666667% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 211, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 211, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_fourth,
   .fractional_row .column.small_one_fourth {
     width: 25% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 216, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 216, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_quarter,
   .fractional_row .column.small_one_quarter {
     width: 25% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 221, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 221, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_three_fourths,
   .fractional_row .column.small_three_fourths {
     width: 75% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 226, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 226, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_three_quarters,
   .fractional_row .column.small_three_quarters {
     width: 75% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 232, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 232, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_fifth,
   .fractional_row .column.small_one_fifth {
     width: 20% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 237, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 237, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_two_fifths,
   .fractional_row .column.small_two_fifths {
     width: 40% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 242, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 242, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_three_fifths,
   .fractional_row .column.small_three_fifths {
     width: 60% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 247, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 247, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_four_fifths,
   .fractional_row .column.small_four_fifths {
     width: 80% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 253, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 253, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_sixth,
   .fractional_row .column.small_one_sixth {
     width: 16.666666666666668% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 258, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 258, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_five_sixths,
   .fractional_row .column.small_five_sixths {
     width: 83.33333333333333% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 264, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 264, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_eighth,
   .fractional_row .column.small_one_eighth {
     width: 12.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 269, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 269, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_three_eighths,
   .fractional_row .column.small_three_eighths {
     width: 37.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 274, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 274, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_five_eighths,
   .fractional_row .column.small_five_eighths {
     width: 62.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 279, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 279, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_seven_eighths,
   .fractional_row .column.small_seven_eighths {
     width: 87.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 285, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 285, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_tenth,
   .fractional_row .column.small_one_tenth {
     width: 10% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 290, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 290, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_three_tenths,
   .fractional_row .column.small_three_tenths {
     width: 30% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 295, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 295, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_seven_tenths,
   .fractional_row .column.small_seven_tenths {
     width: 70% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 300, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 300, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_nine_tenths,
   .fractional_row .column.small_nine_tenths {
     width: 90% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 306, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 306, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_one_twelfth,
   .fractional_row .column.small_one_twelfth {
     width: 8.333333333333334% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 311, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 311, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_five_twelfths,
   .fractional_row .column.small_five_twelfths {
     width: 41.666666666666664% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 316, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 316, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_seven_twelfths,
   .fractional_row .column.small_seven_twelfths {
     width: 58.333333333333336% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 321, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 321, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_nine_twelfths,
   .fractional_row .column.small_nine_twelfths {
     width: 75% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 326, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 326, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_eleven_twelfths,
   .fractional_row .column.small_eleven_twelfths {
     width: 91.66666666666667% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 332, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 332, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.small_whole,
   .fractional_row .column.small_whole,
   .fractional_row .columns.small_one,
@@ -814,217 +814,217 @@ two_fourths = one_half, so two_fourths doesn't exist.
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 350, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 350, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns .medium_text_right,
   .fractional_row .column .medium_text_right {
     text-align: right !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 355, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 355, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns .medium_text_left,
   .fractional_row .column .medium_text_left {
     text-align: left !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 361, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 361, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_left,
   .fractional_row .column.medium_left {
     float: left !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 366, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 366, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_right,
   .fractional_row .column.medium_right {
     float: right !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 372, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 372, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_half,
   .fractional_row .column.medium_one_half {
     width: 50% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 378, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 378, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_third,
   .fractional_row .column.medium_one_third {
     width: 33.333333333333336% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 383, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 383, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_two_thirds,
   .fractional_row .column.medium_two_thirds {
     width: 66.66666666666667% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 389, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 389, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_fourth,
   .fractional_row .column.medium_one_fourth {
     width: 25% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 394, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 394, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_quarter,
   .fractional_row .column.medium_one_quarter {
     width: 25% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 399, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 399, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_three_fourths,
   .fractional_row .column.medium_three_fourths {
     width: 75% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 404, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 404, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_three_quarters,
   .fractional_row .column.medium_three_quarters {
     width: 75% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 410, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 410, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_fifth,
   .fractional_row .column.medium_one_fifth {
     width: 20% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 415, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 415, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_two_fifths,
   .fractional_row .column.medium_two_fifths {
     width: 40% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 420, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 420, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_three_fifths,
   .fractional_row .column.medium_three_fifths {
     width: 60% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 425, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 425, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_four_fifths,
   .fractional_row .column.medium_four_fifths {
     width: 80% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 431, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 431, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_sixth,
   .fractional_row .column.medium_one_sixth {
     width: 16.666666666666668% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 436, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 436, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_five_sixths,
   .fractional_row .column.medium_five_sixths {
     width: 83.33333333333333% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 442, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 442, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_eighth,
   .fractional_row .column.medium_one_eighth {
     width: 12.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 447, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 447, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_three_eighths,
   .fractional_row .column.medium_three_eighths {
     width: 37.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 452, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 452, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_five_eighths,
   .fractional_row .column.medium_five_eighths {
     width: 62.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 457, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 457, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_seven_eighths,
   .fractional_row .column.medium_seven_eighths {
     width: 87.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 463, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 463, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_tenth,
   .fractional_row .column.medium_one_tenth {
     width: 10% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 468, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 468, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_three_tenths,
   .fractional_row .column.medium_three_tenths {
     width: 30% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 473, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 473, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_seven_tenths,
   .fractional_row .column.medium_seven_tenths {
     width: 70% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 478, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 478, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_nine_tenths,
   .fractional_row .column.medium_nine_tenths {
     width: 90% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 484, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 484, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_one_twelfth,
   .fractional_row .column.medium_one_twelfth {
     width: 8.333333333333334% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 489, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 489, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_five_twelfths,
   .fractional_row .column.medium_five_twelfths {
     width: 41.666666666666664% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 494, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 494, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_seven_twelfths,
   .fractional_row .column.medium_seven_twelfths {
     width: 58.333333333333336% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 499, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 499, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_nine_twelfths,
   .fractional_row .column.medium_nine_twelfths {
     width: 75% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 504, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 504, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_eleven_twelfths,
   .fractional_row .column.medium_eleven_twelfths {
     width: 91.66666666666667% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 510, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 510, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns.medium_whole,
   .fractional_row .column.medium_whole,
   .fractional_row .columns.medium_one,
@@ -1034,744 +1034,744 @@ two_fourths = one_half, so two_fourths doesn't exist.
     width: 100% !important;
   }
 }
-/* line 518, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 518, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns:last-of-type,
 .fractional_row .column:last-of-type {
   float: right;
 }
-/* line 521, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 521, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns:first-of-type,
 .fractional_row .column:first-of-type {
   float: left;
 }
-/* line 525, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 525, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.centered,
 .fractional_row .column.centered {
   margin-left: auto;
   margin-right: auto;
   float: none;
 }
-/* line 530, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 530, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.right,
 .fractional_row .column.right {
   float: right !important;
 }
-/* line 533, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 533, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .fractional_row .columns.left,
 .fractional_row .column.left {
   float: left !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 536, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 536, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row .columns,
   .fractional_row .column {
     width: 100% !important;
   }
 }
 @media only screen and (min-width: 767px) {
-  /* line 542, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 542, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row.large_break .columns,
   .fractional_row.large_break .column {
     float: none;
     width: auto;
   }
-  /* line 546, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 546, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row.large_break:before {
     display: none;
   }
-  /* line 549, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 549, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .fractional_row.large_break:after {
     display: none;
   }
 }
-/* line 556, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 556, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .left {
   float: left;
 }
-/* line 560, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 560, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .right {
   float: right;
 }
-/* line 564, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 564, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .large_left {
   float: left;
 }
-/* line 568, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 568, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .large_right {
   float: right;
 }
-/* line 572, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 572, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .italics {
   font-style: italic;
 }
-/* line 576, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 576, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .text_right {
   text-align: right;
 }
-/* line 579, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 579, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .text_left {
   text-align: left;
 }
-/* line 582, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 582, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .text_center {
   text-align: center;
 }
 @media only screen and (max-width: 767px) {
-  /* line 587, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 587, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_text_right {
     text-align: right !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 592, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 592, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_text_left {
     text-align: left !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 598, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 598, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .show_small {
     display: block !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 604, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 604, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .show_medium {
     display: block !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 610, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 610, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .show_large {
     display: block;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 616, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 616, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .hide_small {
     display: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 622, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 622, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .hide_medium {
     display: none !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 628, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 628, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .hide_large {
     display: none !important;
   }
 }
 @media only screen and (min-width: 1025px) {
-  /* line 633, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 633, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .hide_desktop {
     display: none !important;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 638, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 638, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .hide_mobile {
     display: none !important;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 644, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 644, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .show_mobile {
     display: block !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 650, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 650, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_no_padding {
     padding: 0 !important;
   }
 }
-/* line 655, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 655, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .no_border {
   border: 0 !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 660, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 660, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_no_border {
     border: 0 !important;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 666, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 666, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .only_small_no_border {
     border: 0 !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 672, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 672, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .medium_no_border {
     border: 0 !important;
   }
 }
 @media only screen and (min-width: 767px) {
-  /* line 678, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 678, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .large_no_border {
     border: 0 !important;
   }
 }
-/* line 683, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 683, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .display_block {
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 687, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 687, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_display_block {
     display: block;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 692, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 692, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .medium_display_block {
     display: block;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 697, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 697, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_display_inline {
     display: inline !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 702, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 702, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .medium_display_inline {
     display: inline !important;
   }
 }
-/* line 707, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 707, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .display_inline_block {
   display: inline-block;
 }
-/* line 711, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 711, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_0 {
   padding: 0 !important;
 }
-/* line 715, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 715, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_2 {
   padding: 2px;
 }
-/* line 718, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 718, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_2_top {
   padding-top: 2px;
 }
-/* line 721, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 721, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_2_right {
   padding-right: 2px;
 }
-/* line 724, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 724, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_2_bottom {
   padding-bottom: 2px;
 }
-/* line 727, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 727, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_2_left {
   padding-left: 2px;
 }
-/* line 730, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 730, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_3 {
   padding: 3px;
 }
-/* line 733, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 733, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_3_top {
   padding-top: 3px;
 }
-/* line 736, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 736, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_3_right {
   padding-right: 3px;
 }
-/* line 739, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 739, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_3_bottom {
   padding-bottom: 3px;
 }
-/* line 742, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 742, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_3_left {
   padding-left: 3px;
 }
-/* line 745, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 745, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_5 {
   padding: 5px;
 }
-/* line 748, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 748, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_5_top {
   padding-top: 5px;
 }
-/* line 751, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 751, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_5_right {
   padding-right: 5px;
 }
-/* line 754, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 754, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_5_bottom {
   padding-bottom: 5px;
 }
-/* line 757, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 757, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_5_left {
   padding-left: 5px;
 }
-/* line 760, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 760, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_5 {
   margin: 5px;
 }
-/* line 763, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 763, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_5_top {
   margin-top: 5px;
 }
-/* line 766, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 766, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_5_right {
   margin-right: 5px;
 }
-/* line 769, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 769, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_5_bottom {
   margin-bottom: 5px;
 }
-/* line 772, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 772, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_5_left {
   margin-left: 5px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 776, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 776, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_5 {
     padding: 5px !important;
   }
 }
-/* line 780, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 780, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_10 {
   padding: 10px;
 }
-/* line 783, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 783, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_10_top {
   padding-top: 10px;
 }
-/* line 786, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 786, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_10_right {
   padding-right: 10px;
 }
-/* line 789, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 789, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_10_bottom {
   padding-bottom: 10px;
 }
-/* line 792, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 792, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_10_left {
   padding-left: 10px;
 }
-/* line 795, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 795, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_10 {
   margin: 10px;
 }
-/* line 798, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 798, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_10_top {
   margin-top: 10px !important;
 }
-/* line 801, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 801, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_10_right {
   margin-right: 10px !important;
 }
-/* line 804, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 804, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_10_bottom {
   margin-bottom: 10px !important;
 }
-/* line 807, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 807, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_10_left {
   margin-left: 10px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 811, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 811, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_no_margin {
     margin: 0 !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 816, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 816, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_10 {
     padding: 10px !important;
   }
 }
-/* line 820, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 820, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_15 {
   padding: 15px;
 }
-/* line 823, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 823, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_15_top {
   padding-top: 15px;
 }
-/* line 826, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 826, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_15_right {
   padding-right: 15px;
 }
-/* line 829, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 829, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_15_bottom {
   padding-bottom: 15px;
 }
-/* line 832, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 832, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_15_left {
   padding-left: 15px;
 }
-/* line 835, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 835, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_20 {
   padding: 20px;
 }
-/* line 838, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 838, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_20_top {
   padding-top: 20px;
 }
-/* line 841, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 841, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_20_right {
   padding-right: 20px;
 }
-/* line 844, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 844, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_20_bottom {
   padding-bottom: 20px;
 }
-/* line 847, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 847, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_20_left {
   padding-left: 20px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 851, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 851, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_20 {
     padding: 20px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 856, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 856, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_20_top {
     padding-top: 20px !important;
   }
 }
-/* line 860, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 860, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_20 {
   margin: 20px;
 }
-/* line 863, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 863, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_20_top {
   margin-top: 20px !important;
 }
-/* line 866, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 866, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_20_right {
   margin-right: 20px !important;
 }
-/* line 869, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 869, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_20_bottom {
   margin-bottom: 20px !important;
 }
-/* line 872, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 872, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_20_left {
   margin-left: 20px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 876, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 876, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_20 {
     padding: 20px !important;
   }
 }
-/* line 880, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 880, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_25 {
   padding: 25px;
 }
-/* line 883, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 883, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_25_top {
   padding-top: 25px;
 }
-/* line 886, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 886, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_25_right {
   padding-right: 25px;
 }
-/* line 889, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 889, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_25_bottom {
   padding-bottom: 25px;
 }
-/* line 892, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 892, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_25_left {
   padding-left: 25px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 896, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 896, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_25 {
     padding: 25px !important;
   }
 }
-/* line 900, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 900, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_30 {
   padding: 30px;
 }
-/* line 903, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 903, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_30_top {
   padding-top: 30px;
 }
-/* line 906, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 906, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_30_right {
   padding-right: 30px;
 }
-/* line 909, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 909, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_30_bottom {
   padding-bottom: 30px;
 }
-/* line 912, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 912, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_30_left {
   padding-left: 30px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 916, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+  /* line 916, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
   .small_padding_30 {
     padding: 30px !important;
   }
 }
-/* line 920, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 920, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_40 {
   padding: 40px;
 }
-/* line 923, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 923, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_40_top {
   padding-top: 40px;
 }
-/* line 926, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 926, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_40_right {
   padding-right: 40px;
 }
-/* line 929, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 929, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_40_bottom {
   padding-bottom: 40px;
 }
-/* line 932, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 932, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_40_left {
   padding-left: 40px;
 }
-/* line 935, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 935, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_50 {
   padding: 50px;
 }
-/* line 938, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 938, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_50_top {
   padding-top: 50px;
 }
-/* line 941, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 941, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_50_right {
   padding-right: 50px;
 }
-/* line 944, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 944, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_50_bottom {
   padding-bottom: 50px;
 }
-/* line 947, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 947, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_50_left {
   padding-left: 50px;
 }
-/* line 950, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 950, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_50 {
   margin: 50px;
 }
-/* line 953, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 953, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_50_top {
   margin-top: 50px;
 }
-/* line 956, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 956, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_50_right {
   margin-right: 50px;
 }
-/* line 959, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 959, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_50_bottom {
   margin-bottom: 50px;
 }
-/* line 962, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 962, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_50_left {
   margin-left: 50px;
 }
-/* line 965, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 965, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_55 {
   padding: 55px;
 }
-/* line 968, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 968, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_55_top {
   padding-top: 55px;
 }
-/* line 971, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 971, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_55_right {
   padding-right: 55px;
 }
-/* line 974, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 974, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_55_bottom {
   padding-bottom: 55px;
 }
-/* line 977, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 977, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_55_left {
   padding-left: 55px;
 }
-/* line 981, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 981, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_65 {
   padding: 65px;
 }
-/* line 984, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 984, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_65_top {
   padding-top: 65px;
 }
-/* line 987, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 987, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_65_right {
   padding-right: 65px;
 }
-/* line 990, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 990, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_65_bottom {
   padding-bottom: 65px;
 }
-/* line 993, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 993, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_65_left {
   padding-left: 65px;
 }
-/* line 997, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 997, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_65 {
   margin: 65px;
 }
-/* line 1000, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1000, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_65_top {
   margin-top: 65px;
 }
-/* line 1003, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1003, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_65_right {
   margin-right: 65px;
 }
-/* line 1006, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1006, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_65_bottom {
   margin-bottom: 65px;
 }
-/* line 1009, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1009, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_65_left {
   margin-left: 65px;
 }
-/* line 1013, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1013, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_75 {
   padding: 75px;
 }
-/* line 1016, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1016, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_75_top {
   padding-top: 75px;
 }
-/* line 1019, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1019, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_75_right {
   padding-right: 75px;
 }
-/* line 1022, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1022, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_75_bottom {
   padding-bottom: 75px;
 }
-/* line 1025, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1025, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_75_left {
   padding-left: 75px;
 }
-/* line 1029, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1029, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_100 {
   padding: 100px;
 }
-/* line 1032, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1032, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_100_top {
   padding-top: 100px;
 }
-/* line 1035, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1035, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_100_right {
   padding-right: 100px;
 }
-/* line 1038, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1038, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_100_bottom {
   padding-bottom: 100px;
 }
-/* line 1041, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1041, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .padding_100_left {
   padding-left: 100px;
 }
-/* line 1045, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1045, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_100 {
   margin: 100px;
 }
-/* line 1048, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1048, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_100_top {
   margin-top: 100px;
 }
-/* line 1051, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1051, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_100_right {
   margin-right: 100px;
 }
-/* line 1054, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1054, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_100_bottom {
   margin-bottom: 100px;
 }
-/* line 1057, /Users/briannoah/Dev/MEAN_stack/src/less/plugins/fractional_grid.less */
+/* line 1057, /Users/matthewmontanez/Development/MEAN-Framework/src/less/plugins/fractional_grid.less */
 .margin_100_left {
   margin-left: 100px;
 }
-/* line 12, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 12, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 span[class*='icon-'] {
   display: block;
 }
-/* line 15, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 15, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 i[class*='icon-'] {
   display: inline-block;
 }
-/* line 1, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 1, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: 0px 0px;
   width: 483px;
   height: 512px;
 }
-/* line 7, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 7, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_100 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -600px -562px;
   width: 100px;
   height: 106px;
 }
-/* line 13, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 13, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_200 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -350px -562px;
   width: 200px;
   height: 212px;
 }
-/* line 19, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 19, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_25 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -618px -474px;
   width: 25px;
   height: 27px;
 }
-/* line 25, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 25, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_300 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: 0px -562px;
   width: 300px;
   height: 318px;
 }
-/* line 31, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 31, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_35 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -533px -474px;
   width: 35px;
   height: 37px;
 }
-/* line 37, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 37, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_400 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -533px 0px;
   width: 400px;
   height: 424px;
 }
-/* line 43, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 43, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_50 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -875px -562px;
   width: 50px;
   height: 53px;
 }
-/* line 49, /Users/briannoah/Dev/MEAN_stack/src/less/sprites/icon.less */
+/* line 49, /Users/matthewmontanez/Development/MEAN-Framework/src/less/sprites/icon.less */
 .icon-angularjs_75 {
   background-image: url(/img/sprites/sprites_icon.png);
   background-position: -750px -562px;
   width: 75px;
   height: 80px;
 }
-/* line 20, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 20, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 h1,
 h2,
 h3,
@@ -1781,15 +1781,15 @@ h5 {
   font-family: HelveticaNeue-Light, Helvetica Neue Light;
   font-weight: normal;
 }
-/* line 26, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 26, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 .gold {
   color: #998260;
 }
-/* line 30, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 30, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 img {
   max-width: 100%;
 }
-/* line 33, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 33, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 button {
   background-color: #000000;
   width: 100%;
@@ -1799,7 +1799,7 @@ button {
   border: 0;
   color: #ffffff;
 }
-/* line 42, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 42, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 input {
   width: 100%;
   height: 45px;
@@ -1809,34 +1809,34 @@ input {
   border: 0;
   border-bottom: 1px solid #999999;
 }
-/* line 50, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 50, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 input.ng-valid.ng-dirty {
   border-left: 3px solid #bcd695;
 }
-/* line 53, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 53, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 input.ng-invalid {
   border-left: 3px solid red;
 }
-/* line 55, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 55, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 input.ng-invalid.ng-pristine {
   border: 0;
   border-bottom: 1px solid #999999;
 }
-/* line 60, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 60, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 input:required {
   box-shadow: none;
 }
-/* line 1, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 1, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header {
   background-color: #999999;
   color: #ffffff;
 }
-/* line 4, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 4, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header a {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 8, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 8, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .logo {
   font-size: 32px;
   text-align: left;
@@ -1845,50 +1845,56 @@ input:required {
   text-align: center;
   font-weight: 100;
 }
-/* line 15, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 15, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .logo a {
   vertical-align: top;
 }
-/* line 18, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 18, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .logo .mean_text {
   vertical-align: top;
 }
-/* line 22, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 22, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .nav_right {
   text-align: right;
   letter-spacing: .1em;
   line-height: 44px;
   text-transform: uppercase;
 }
-/* line 28, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 28, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .nav_right span {
   margin-left: 10px;
 }
-/* line 30, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 30, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .nav_right span a {
   color: #ffffff;
 }
-/* line 33, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 33, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .nav_right span#log_out {
   cursor: pointer;
 }
-/* line 36, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 36, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .nav_right span:after {
   content: '|';
   margin-left: 10px;
 }
-/* line 41, /Users/briannoah/Dev/MEAN_stack/src/less/main/header.less */
+/* line 41, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/header.less */
 #header .nav_right span:last-of-type:after {
   content: '';
 }
-/* line 69, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 1, /Users/matthewmontanez/Development/MEAN-Framework/src/less/main/footer.less */
+#footer {
+  background-color: #999999;
+  color: #ffffff;
+  text-align: center;
+}
+/* line 69, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 body {
   font-size: 12px;
   background: #ffffff;
   color: #000000;
   font-family: HelveticaNeue-Light, Helvetica Neue Light;
 }
-/* line 76, /Users/briannoah/Dev/MEAN_stack/src/less/style.less */
+/* line 76, /Users/matthewmontanez/Development/MEAN-Framework/src/less/style.less */
 * {
   box-sizing: border-box;
   position: relative;

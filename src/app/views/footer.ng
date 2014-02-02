@@ -1,14 +1,5 @@
 <div class="responsive_container">
 	<div class="fractional_row padding_10_left padding_10_right">
-		<div class="one_quarter small_one_quarter medium_one_third columns logo padding_2_top text_align_center">
-			<a href="/" >
-				<span class="hide_small medium_display_inline mean_text">ME</span><i class="icon-angularjs_35 margin_5_right"></i><span class="hide_small medium_display_inline mean_text">N</span>
-			</a>
-		</div>
-		<div class="three_quarters small_three_quarters medium_two_thirds columns text_right nav_right">
-			<span ng-if="root.logged_in"><a ng-href="/{{root.user.username}}">{{root.user.first_name}} {{root.user.last_name}}</a></span>
-			<span ng-if="!root.logged_in"><a href="/login">Log In</a></span>
-			<span id="log_out" ng-if="root.logged_in" ng-click="logOut()">Log Out</span>
-		</div>
+		Build MEAN.
 	</div>
 </div>
