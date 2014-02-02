@@ -21,6 +21,7 @@ Directions
 
 1. Install nvm and use node 0.10.24
 
+        curl https://raw.github.com/creationix/nvm/master/install.sh | sh
         nvm alias default 0.10.24
 
 2. Install node and grunt dependencies
