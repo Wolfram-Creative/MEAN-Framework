@@ -63,6 +63,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     $routeProvider.otherwise({ redirectTo: '/' });
 }]);
+app.controller("FooterController", ['$scope', '$rootScope', '$location', 'AuthenticationService', 'apiCall', '_$local', function($scope, $rootScope, $location, AuthenticationService, apiCall, _$local) {
+	'use strict';
+	$scope.root = $rootScope;
+}]);
 app.controller("HeaderController", ['$scope', '$rootScope', '$location', 'AuthenticationService','apiCall', '_$local', function($scope, $rootScope, $location, AuthenticationService, apiCall, _$local) {
 	'use strict';
 	$scope.root = $rootScope;
@@ -113,6 +117,14 @@ app.controller("LoginController", ['$rootScope', '$routeParams', '$scope', '$loc
 		});
 	};
 }]);
+app.directive('ngFooter', function () {
+	'use strict';
+	return {
+		restrict: 'A',
+		templateUrl: '/src/app/views/footer.ng',
+		controller: 'FooterController'
+	};
+});
 app.directive('integer', function() {
     var INTEGER_REGEXP = /^\-?\d+$/;
     return {
