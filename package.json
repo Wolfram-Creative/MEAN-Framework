@@ -21,6 +21,11 @@
     "express": "*",
     "ejs": "*",
     "mongojs": "*",
-    "dotenv": "~0.2.3"
+    "dotenv": "~0.2.3",
+    "body-parser": "~1.0.1",
+    "cookie-parser": "~1.0.1",
+    "morgan": "~1.0.0",
+    "connect-multiparty": "~1.0.3",
+    "method-override": "~1.0.0"
   }
 }

@@ -12,6 +12,11 @@ db = require("mongojs").connect(databaseUrl, collections);
 
 var express = require('express'),
     http = require('http'),
+    morgan = require('morgan'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser'),
+    multiparty = require('connect-multiparty'),
+    methodOverride = require('method-override'),
     users = require('./api_routes/users');
     // events = require('./api_routes/events');
     
@@ -31,21 +36,21 @@ var appHeaders = function(req, res, next) {
     }
 };
 
-app.configure(function(){
+
     app.set('port', process.env.PORT || 3000);
     app.use(appHeaders);
     app.use('/css', express.static(__dirname + '/www/css'));
     app.use('/img', express.static(__dirname + '/www/img'));
     app.use('/js', express.static(__dirname + '/www/js'));
     app.use('/src', express.static(__dirname + '/src'));
-    app.use(express.logger('dev'));
-    app.use(express.json());
-    app.use(express.urlencoded());
-    app.use(express.cookieParser());
-    app.use(express.methodOverride());
+    app.use(morgan('short'));
+    app.use(bodyParser.json());
+    app.use(multiparty());
+    app.use(cookieParser());
+    app.use(methodOverride());
     app.set('views', __dirname + '/www');
     app.engine('html', require('ejs').renderFile);
-});
+
 
 app.get('/', function (req, res) {
     res.render('index.html');
